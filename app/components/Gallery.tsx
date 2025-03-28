@@ -6,23 +6,23 @@ import Image from 'next/image';
 const galleryImages = [
     {
         src: '/gallery/image1.jpg',
-        alt: 'Homestay exterior view',
+        alt: 'Ruang Tamu',
     },
     {
         src: '/gallery/image2.jpg',
-        alt: 'Swimming pool area',
+        alt: 'Dapur Memasak',
     },
     {
         src: '/gallery/image3.jpg',
-        alt: 'Bedroom interior',
+        alt: 'Ruang Tamu',
     },
     {
         src: '/gallery/image4.jpg',
-        alt: 'Living room space',
+        alt: 'Bilik Tidur',
     },
     {
         src: '/gallery/image5.jpg',
-        alt: 'Surrounding nature view',
+        alt: 'Kolam Renang',
     },
 ];
 
@@ -93,7 +93,7 @@ export default function Gallery() {
         <section id="gallery" className="w-full py-16 bg-[#F5EEDC]/90">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-4xl md:text-5xl font-playfair font-bold text-center mb-10 text-[#183B4E] select-none">
-                    Gallery
+                    Galeri
                 </h2>
 
                 <div
@@ -200,7 +200,7 @@ export default function Gallery() {
                     </div>
 
                     {/* Swipe indicator */}
-                    <div className="mt-8 text-center text-white/80 text-sm select-none">
+                    <div className="mt-8 text-center text-[#183B4E]/80 text-sm select-none">
                         <span>← Swipe to navigate →</span>
                     </div>
 
@@ -216,11 +216,6 @@ export default function Gallery() {
                                 aria-label={`Go to image ${index + 1}`}
                             />
                         ))}
-                    </div>
-
-                    {/* Add a hint message */}
-                    <div className="mt-2 text-center text-[#183B4E]/60 text-xs select-none">
-                        <span>Grab and drag to explore</span>
                     </div>
                 </div>
             </div>

@@ -54,17 +54,14 @@ export default function Home() {
             
             <div className="flex flex-wrap mt-2 text-[#F5EEDC] font-semibold tracking-wide font-montserrat select-none cursor-default">
               <p className="flex items-center text-sm sm:text-base">
-                <span className="mr-2 text-lg">•</span> Kolam Renang,ATV, Sawah Padi, Dusun Buah
+                <span className="mr-2 text-lg">•</span> Kolam Renang,ATV, Sawah Padi, Dusun
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10 w-full sm:w-auto">
                 <Link href="https://wa.me/60174156105?text=Melah%20Inn" className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-[#27548A] rounded-lg shadow-lg hover:bg-[#183B4E] transition-all duration-300 hover:translate-y-[-2px] select-none w-full sm:w-auto">
-                Hubungi Kami
-                </Link>
-              <button className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-transparent border-2 border-[#F5EEDC] rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-y-[-2px] select-none w-full sm:w-auto">
                 Tempah Sekarang
-              </button>
+                </Link>
             </div>
             
             {/* Feature highlights */}

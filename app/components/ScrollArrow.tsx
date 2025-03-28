@@ -21,7 +21,7 @@ export default function ScrollArrow({ targetId }: ScrollArrowProps) {
         className="flex flex-col items-center animate-bounce"
         aria-label="Scroll down to see more"
       >
-        <span className="text-white text-sm font-medium mb-2 tracking-widest opacity-80">SCROLL</span>
+        <span className="text-white text-sm font-medium mb-2 tracking-widest opacity-80">Let's Go!</span>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           fill="none" 

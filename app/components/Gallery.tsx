@@ -92,13 +92,21 @@ export default function Gallery() {
     return (
         <section id="gallery" className="w-full py-16 bg-[#F5EEDC]/90">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-center mb-10 text-[#183B4E]">
+                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-center mb-10 text-[#183B4E] select-none">
                     Gallery
                 </h2>
 
                 <div
-                    className="relative w-full max-w-4xl mx-auto overflow-hidden"
-                    style={{ perspective: '1000px' }}
+                    className={`relative w-full max-w-4xl mx-auto overflow-hidden ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
+                    style={{ 
+                        perspective: '1000px',
+                        WebkitTapHighlightColor: 'transparent',
+                        WebkitTouchCallout: 'none',
+                        WebkitUserSelect: 'none',
+                        MozUserSelect: 'none',
+                        msUserSelect: 'none',
+                        userSelect: 'none',
+                    }}
                     ref={cardsContainerRef}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
@@ -108,7 +116,7 @@ export default function Gallery() {
                     onMouseUp={handleMouseUp}
                     onMouseLeave={handleMouseUp}
                 >
-                    <div className="flex justify-center items-center min-h-[450px] sm:min-h-[550px] relative">
+                    <div className="flex justify-center items-center min-h-[450px] sm:min-h-[550px] relative select-none">
                         {galleryImages.map((image, index) => {
                             // Calculate distance from the current index
                             const distance = (index - currentIndex + galleryImages.length) % galleryImages.length;
@@ -130,7 +138,7 @@ export default function Gallery() {
                             return (
                                 <div
                                     key={index}
-                                    className="absolute rounded-xl shadow-2xl transition-all duration-300 ease-out"
+                                    className={`absolute rounded-xl shadow-2xl transition-all duration-300 ease-out ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
                                     style={{
                                         zIndex,
                                         transform: `translateX(${normalizedDistance * 65}px) 
@@ -138,43 +146,48 @@ export default function Gallery() {
                                 rotateY(${normalizedDistance * -5}deg)`,
                                         opacity: 1 - Math.abs(normalizedDistance) * 0.3,
                                         filter: !isActive ? `brightness(${1 - Math.abs(normalizedDistance) * 0.3})` : 'none',
+                                        WebkitTapHighlightColor: 'transparent',
+                                        WebkitTouchCallout: 'none',
                                     }}
                                 >
-                                    <div className="relative w-[280px] sm:w-[400px] h-[400px] sm:h-[500px] overflow-hidden rounded-xl border-4 border-white bg-white">
+                                    <div className="relative w-[280px] sm:w-[400px] h-[400px] sm:h-[500px] overflow-hidden rounded-xl border-4 border-white bg-white select-none">
                                         {/* Card top part with image */}
-                                        <div className="relative w-full h-[85%] overflow-hidden">
+                                        <div className={`relative w-full h-[85%] overflow-hidden ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}>
                                             <Image
                                                 src={image.src}
                                                 alt={image.alt}
                                                 fill
-                                                className={`object-cover transition-all duration-300 ${!isActive ? 'blur-[1px]' : ''}`}
+                                                className={`object-cover transition-all duration-300 ${!isActive ? 'blur-[1px]' : ''} ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
                                                 priority={isActive}
                                                 style={{
                                                     filter: !isActive ? `blur(${blurAmount}px)` : 'none',
+                                                    pointerEvents: 'none',
                                                 }}
+                                                draggable="false"
+                                                unselectable="on"
                                             />
                                             {/* Image overlay for non-active cards */}
                                             {!isActive && (
                                                 <div 
-                                                    className="absolute inset-0 bg-black transition-opacity duration-300" 
+                                                    className="absolute inset-0 bg-black transition-opacity duration-300 select-none" 
                                                     style={{ opacity: darknessAmount }}
                                                 />
                                             )}
                                         </div>
 
                                         {/* Card bottom part with caption */}
-                                        <div className={`absolute bottom-0 left-0 right-0 h-[15%] bg-white p-3 flex items-center justify-center transition-colors duration-300 ${!isActive ? 'bg-gray-100' : ''}`}>
-                                            <p className={`text-center font-medium truncate transition-colors duration-300 ${isActive ? 'text-[#27548A]' : 'text-gray-500'}`}>
+                                        <div className={`absolute bottom-0 left-0 right-0 h-[15%] bg-white p-3 flex items-center justify-center transition-colors duration-300 ${!isActive ? 'bg-gray-100' : ''} select-none`}>
+                                            <p className={`text-center font-medium truncate transition-colors duration-300 ${isActive ? 'text-[#27548A]' : 'text-gray-500'} select-none`}>
                                                 {image.alt}
                                             </p>
                                         </div>
 
                                         {/* Card border effect */}
-                                        <div className={`absolute inset-0 rounded-xl border pointer-events-none transition-colors duration-300 ${isActive ? 'border-gray-200' : 'border-gray-300'}`} />
+                                        <div className={`absolute inset-0 rounded-xl border pointer-events-none transition-colors duration-300 ${isActive ? 'border-gray-200' : 'border-gray-300'} select-none`} />
 
                                         {/* Card shadow */}
                                         <div
-                                            className="absolute -bottom-6 left-4 right-4 h-4 bg-black/20 blur-md rounded-full z-[-1]"
+                                            className="absolute -bottom-6 left-4 right-4 h-4 bg-black/20 blur-md rounded-full z-[-1] select-none"
                                             style={{
                                                 opacity: isActive ? 0.5 : 0.2,
                                                 transform: `scaleX(${isActive ? 0.9 : 0.7})`
@@ -187,22 +200,27 @@ export default function Gallery() {
                     </div>
 
                     {/* Swipe indicator */}
-                    <div className="mt-8 text-center text-white/80 text-sm">
+                    <div className="mt-8 text-center text-white/80 text-sm select-none">
                         <span>← Swipe to navigate →</span>
                     </div>
 
                     {/* Image Indicators/Dots */}
-                    <div className="mt-4 flex justify-center space-x-3">
+                    <div className="mt-4 flex justify-center space-x-3 select-none">
                         {galleryImages.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => setCurrentIndex(index)}
                                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                                     currentIndex === index ? 'bg-white scale-125' : 'bg-white/40'
-                                }`}
+                                } select-none`}
                                 aria-label={`Go to image ${index + 1}`}
                             />
                         ))}
+                    </div>
+
+                    {/* Add a hint message */}
+                    <div className="mt-2 text-center text-[#183B4E]/60 text-xs select-none">
+                        <span>Grab and drag to explore</span>
                     </div>
                 </div>
             </div>

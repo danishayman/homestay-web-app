@@ -23,7 +23,7 @@ export default function Home() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero-img.jpg" 
-          alt="Modern homestay exterior view"
+          alt="Melah Inn Homestay"
           fill
           priority
           className="object-cover"

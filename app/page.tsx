@@ -53,7 +53,7 @@ export default function Home() {
             
             <div className="flex flex-wrap mt-2 text-[#F5EEDC] font-semibold tracking-wide font-montserrat select-none cursor-default">
               <p className="flex items-center text-sm sm:text-base">
-                <span className="mr-2 text-lg">•</span> Kolam Renang, ATV, Sawah Padi, Dusun Buah
+                <span className="mr-2 text-lg">•</span> Kolam Renang,ATV, Sawah Padi, Dusun Buah
               </p>
             </div>
             

@@ -8,8 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-montserrat);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +21,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Font utility classes */
@@ -44,10 +42,15 @@ h1, h2, h3, button, .interactive-text {
   user-select: none;
 }
 
-/* Add this to your existing CSS */
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
-  overflow: hidden; /* Prevents scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
 }
 
 .no-scroll {

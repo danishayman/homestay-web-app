@@ -55,10 +55,10 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10 w-full sm:w-auto">
             <button className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-[#27548A] rounded-lg shadow-lg hover:bg-[#183B4E] transition-all duration-300 hover:translate-y-[-2px] select-none w-full sm:w-auto">
-              Tempah Sekarang
+              Hubungi Kami
             </button>
             <button className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-transparent border-2 border-[#F5EEDC] rounded-lg hover:bg-white/10 transition-all duration-300 hover:translate-y-[-2px] select-none w-full sm:w-auto">
-              Jelajahi Homestay
+              Tempah Sekarang
             </button>
           </div>
           

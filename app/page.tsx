@@ -59,7 +59,16 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10 w-full sm:w-auto">
-                <Link href="https://wa.me/60174156105?text=Melah%20Inn" className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-[#27548A] rounded-lg shadow-lg hover:bg-[#183B4E] transition-all duration-300 hover:translate-y-[-2px] select-none w-full sm:w-auto">
+                <Link 
+                  href="https://wa.me/60174156105?text=Melah%20Inn" 
+                  className="font-montserrat px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-widest text-white bg-[#27548A] rounded-lg shadow-lg hover:bg-[#183B4E] transition-all duration-300 hover:translate-y-[-2px] active:translate-y-0 select-none w-full sm:w-auto text-center cursor-pointer z-10 touch-manipulation"
+                  onClick={(e) => {
+                    // This explicit handler helps with mobile devices
+                    window.open("https://wa.me/60174156105?text=Melah%20Inn", "_blank");
+                  }}
+                  aria-label="Tempah Sekarang melalui WhatsApp"
+                  role="button"
+                >
                 Tempah Sekarang
                 </Link>
             </div>

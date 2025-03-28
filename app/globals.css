@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Font utility classes */
+.font-playfair {
+  font-family: var(--font-playfair), 'Georgia', serif;
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), 'Arial', sans-serif;
+}
+
+/* Text shadow for better readability on image backgrounds */
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Prevent text selection on interactive elements */
+h1, h2, h3, button, .interactive-text {
+  user-select: none;
+}
+
+/* Add this to your existing CSS */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.no-scroll {
+  overflow: hidden;
+}

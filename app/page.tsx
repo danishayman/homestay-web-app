@@ -22,7 +22,7 @@ export default function Home() {
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/test.jpg" 
+          src="/hero-img.jpg" 
           alt="Modern homestay exterior view"
           fill
           priority

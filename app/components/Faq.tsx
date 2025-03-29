@@ -108,7 +108,7 @@ export default function Faq() {
                             href="tel:+60174156105"
                             className="text-[#27548A] font-semibold hover:text-[#183B4E] transition-colors duration-300"
                         >
-                            +6017-415 6105
+                            +6017-4156105
                         </a>
                     </p>
                 </div>

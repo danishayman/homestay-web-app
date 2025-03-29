@@ -2,6 +2,7 @@ import { Montserrat, Playfair_Display } from 'next/font/google';
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Facilities from "./components/Facilities";
+import Location from "./components/Location";
 
 // Font configuration
 const montserrat = Montserrat({ 
@@ -29,6 +30,9 @@ export default function Home() {
 
       {/* Facilities Section */}
       <Facilities />
+
+      {/* Location Section */}
+      <Location />
     </div>
   );
 }

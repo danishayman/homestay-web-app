@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Location() {
   return (
-    <section id="location" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-white">
+    <section id="location" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]/90">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Alamat & Lokasi</h2>
@@ -19,10 +19,10 @@ export default function Location() {
               <p className="text-[#183B4E] text-sm font-medium">Map placeholder - Akan dimuat dengan Google Maps</p>
             </div>
             
-            {/* Uncomment and use actual Google Maps embed when ready */}
-            {/* 
+            {/* Google Maps Embed */}
+            { 
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!..." 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5019550207128!2d100.45104873829598!3d6.130174798464183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b4f3817f2bc89%3A0x171f1f16f7a2f057!2sKampung%20Telok%20Jamat!5e0!3m2!1sen!2smy!4v1743237281150!5m2!1sen!2smy" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -32,7 +32,7 @@ export default function Location() {
               title="Tuah Cemerlang Homestay Location"
               className="absolute inset-0"
             ></iframe> 
-            */}
+            }
           </div>
 
           {/* Contact Info */}
@@ -52,9 +52,11 @@ export default function Location() {
                   <h4 className="font-montserrat font-semibold text-[#183B4E]">Alamat</h4>
                   <p className="mt-1 text-[#183B4E]/80 font-montserrat">
                     Tuah Cemerlang Homestay<br />
-                    Kampung Paya, Jalan Kuala Sungai<br />
-                    Kuala Sungai, 34850 Trong<br />
-                    Perak Darul Ridzuan
+                    No 124<br />
+                    Kampung Teluk Jamat<br />
+                    06400 Pokok Sena<br/>
+                    Kedah Darul Aman<br/>
+
                   </p>
                 </div>
               </div>
@@ -89,8 +91,8 @@ export default function Location() {
                 <div>
                   <h4 className="font-montserrat font-semibold text-[#183B4E]">Email</h4>
                   <p className="mt-1">
-                    <Link href="mailto:info@tuahcemerlanghomestay.com" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
-                      info@tuahcemerlanghomestay.com
+                    <Link href="mailto:info@tuahcemerlang@gmail.com" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
+                      tuahcemerlang@gmail.com
                     </Link>
                   </p>
                 </div>
@@ -98,7 +100,7 @@ export default function Location() {
 
               <div className="mt-8 pt-4 border-t border-gray-200">
                 <Link 
-                  href="https://waze.com/ul?ll=4.9631,100.5967&navigate=yes" 
+                  href="https://www.waze.com/en/live-map/directions/my/kedah/pokok-sena/kampung-telok-jamat?place=ChIJibzyFzhPSzARV_Ci9xYfHxc" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-white bg-[#27548A] rounded-lg shadow-md hover:bg-[#183B4E] transition-all duration-300"
@@ -107,7 +109,7 @@ export default function Location() {
                     <path d="M19.39 10.74C19 6.38 15.71 3 11.87 3S4.1 6.63 4.1 11.24c0 4.24 2.71 7.97 6.14 9.33 1.43.57 3 .57 4.43 0 3.43-1.36 6.14-5.09 6.14-9.33 0-.18 0-.34-.02-.5z" fill="#1CABE2"></path>
                     <path d="M13.52 14.92c-.14.18-.36.28-.6.28s-.46-.1-.6-.28l-1.21-1.45c-.14-.16-.21-.37-.21-.59 0-.22.07-.42.21-.59l1.21-1.45c.14-.18.36-.28.6-.28s.46.1.6.28c.33.4.28.99-.12 1.32l-.7.84.7.84c.31.38.3 1.03-.08 1.35zm-4.03 2.35c-.4.16-.87-.03-1.03-.43l-1.77-4.26c-.14-.34-.08-.73.15-1.01.4-.48 1.11-.55 1.58-.14.21.17.35.42.39.7l1.77 4.26c.17.4-.03.87-.43 1.03l-.34-.15zm7.85-4.69l-1.77 4.26c-.16.4-.64.59-1.03.43-.4-.17-.6-.64-.43-1.03l1.77-4.26c.04-.28.18-.53.39-.7.48-.4 1.19-.33 1.58.14.24.28.29.67.15 1.01l-.34.15z" fill="#FFF"></path>
                   </svg>
-                  Navigasi dengan Waze
+                  Waze
                 </Link>
               </div>
             </div>

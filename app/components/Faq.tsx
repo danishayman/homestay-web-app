@@ -102,7 +102,7 @@ export default function Faq() {
                 </div>
 
                 <div className="mt-8 text-center">
-                    <p className="text-[#183B4E]/80 font-montserrat text-sm">
+                    <p className="text-[#183B4E]/90 font-montserrat text-sm">
                         Mempunyai pertanyaan lain? Hubungi kami di{' '}
                         <a
                             href="tel:+60174156105"

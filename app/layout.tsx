@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Melah Inn Homestay",
-  description: "Experience the perfect blend of modern comfort and traditional charm at our homestay",
+  title: "Tuah Cemerlang Homestay",
+  description: "Nikmati pengalaman menginap yang unik di Tuah Cemerlang Homestay, Kedah. Dikelilingi oleh pemandangan indah dan kemudahan moden.",
 };
 
 export default function RootLayout({

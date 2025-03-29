@@ -3,6 +3,7 @@ import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Facilities from "./components/Facilities";
 import Location from "./components/Location";
+import NearbyAttractions from "./components/NearbyAttractions";
 
 // Font configuration
 const montserrat = Montserrat({ 
@@ -33,6 +34,9 @@ export default function Home() {
 
       {/* Location Section */}
       <Location />
+
+      {/* Nearby Attractions Section */}
+      <NearbyAttractions />
     </div>
   );
 }

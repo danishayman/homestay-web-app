@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/hero-img.jpg"
-                    alt="Melah Inn Homestay"
+                    alt="Tuah Cemerlang Homestay"
                     fill
                     priority
                     className="object-cover"

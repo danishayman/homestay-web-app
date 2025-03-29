@@ -35,7 +35,7 @@ export default function Hero() {
 
                     <div className="flex flex-wrap mt-2 text-[#F5EEDC] font-semibold tracking-wide font-montserrat select-none cursor-default">
                         <p className="flex items-center text-sm sm:text-base">
-                            <span className="mr-2 text-lg">•</span> Kolam Renang,ATV, Sawah Padi, Dusun
+                            <span className="mr-2 text-lg">•</span> Kolam Renang, ATV, Sawah Padi, Dusun
                         </p>
                     </div>
 

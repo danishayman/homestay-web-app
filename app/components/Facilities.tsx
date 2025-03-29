@@ -65,8 +65,8 @@ export default function Facilities() {
         <section id="facilities" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Kemudahan & Fasiliti</h2>
-                    <p className="text-[#27548A] font-montserrat max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-6xl font-playfair font-bold text-[#183B4E] mb-4">Kemudahan & Fasiliti</h2>
+                    <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
                         Nikmati pelbagai kemudahan dan fasiliti yang disediakan untuk memastikan penginapan anda selesa dan menyeronokkan.
                     </p>
                 </div>

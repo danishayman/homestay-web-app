@@ -92,9 +92,12 @@ export default function Gallery() {
     return (
         <section id="gallery" className="w-full py-16 bg-[#F5EEDC]/90">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-center mb-10 text-[#183B4E] select-none">
+                <h2 className="text-4xl md:text-6xl font-playfair font-bold text-center mb-10 text-[#183B4E] select-none">
                     Galeri
                 </h2>
+                <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold text-center">
+                    Lihat keindahan homestay kami melalui gambar-gambar yang memukau. Setiap sudut mempunyai cerita tersendiri.
+                </p>
 
                 <div
                     className={`relative w-full max-w-4xl mx-auto overflow-hidden ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}

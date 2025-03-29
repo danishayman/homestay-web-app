@@ -7,7 +7,7 @@ export default function Location() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Alamat & Lokasi</h2>
-          <p className="text-[#27548A] font-montserrat max-w-2xl mx-auto">
+          <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
             Mudah untuk dicari, senang untuk sampai. Lokasi strategik dengan pemandangan indah.
           </p>
         </div>
@@ -105,10 +105,15 @@ export default function Location() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-white bg-[#27548A] rounded-lg shadow-md hover:bg-[#183B4E] transition-all duration-300"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M19.39 10.74C19 6.38 15.71 3 11.87 3S4.1 6.63 4.1 11.24c0 4.24 2.71 7.97 6.14 9.33 1.43.57 3 .57 4.43 0 3.43-1.36 6.14-5.09 6.14-9.33 0-.18 0-.34-.02-.5z" fill="#1CABE2"></path>
-                    <path d="M13.52 14.92c-.14.18-.36.28-.6.28s-.46-.1-.6-.28l-1.21-1.45c-.14-.16-.21-.37-.21-.59 0-.22.07-.42.21-.59l1.21-1.45c.14-.18.36-.28.6-.28s.46.1.6.28c.33.4.28.99-.12 1.32l-.7.84.7.84c.31.38.3 1.03-.08 1.35zm-4.03 2.35c-.4.16-.87-.03-1.03-.43l-1.77-4.26c-.14-.34-.08-.73.15-1.01.4-.48 1.11-.55 1.58-.14.21.17.35.42.39.7l1.77 4.26c.17.4-.03.87-.43 1.03l-.34-.15zm7.85-4.69l-1.77 4.26c-.16.4-.64.59-1.03.43-.4-.17-.6-.64-.43-1.03l1.77-4.26c.04-.28.18-.53.39-.7.48-.4 1.19-.33 1.58.14.24.28.29.67.15 1.01l-.34.15z" fill="#FFF"></path>
-                  </svg>
+                  <div className="relative w-5 h-5 mr-2">
+                    <Image 
+                      src="/waze-logo.png" 
+                      alt="Waze Logo" 
+                      width={20} 
+                      height={20} 
+                      className="object-contain"
+                    />
+                  </div>
                   Waze
                 </Link>
               </div>

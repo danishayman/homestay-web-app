@@ -5,6 +5,7 @@ import Facilities from "./components/Facilities";
 import Location from "./components/Location";
 import NearbyAttractions from "./components/NearbyAttractions";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 // Font configuration
 const montserrat = Montserrat({ 
@@ -41,6 +42,9 @@ export default function Home() {
 
       {/* FAQ Section */}
       <Faq />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

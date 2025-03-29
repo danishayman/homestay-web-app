@@ -70,9 +70,11 @@ export default function Footer() {
                                     </svg>
                                 </div>
                                 <address className="text-white/80 text-sm not-italic font-montserrat">
-                                    Kampung Paya, Jalan Kuala Sungai<br />
-                                    Kuala Sungai, 34850 Trong<br />
-                                    Perak Darul Ridzuan
+                                    Tuah Cemerlang Homestay<br />
+                                    No 124<br />
+                                    Kampung Teluk Jamat<br />
+                                    06400 Pokok Sena<br />
+                                    Kedah Darul Aman<br />
                                 </address>
                             </div>
 

@@ -54,7 +54,7 @@ export default function Hero() {
 
                     {/* Feature highlights */}
                     <div className="flex flex-wrap justify-center max-w-xl gap-2 sm:gap-3 md:gap-4 mt-8 sm:mt-10 md:mt-12">
-                        {["Pemandangan Indah", "Kemudahan Moden", "Suasana Kampung", "Reka Bentuk Lestari"].map((feature) => (
+                        {["Pemandangan Indah", "Kemudahan Moden", "Suasana Kampung"].map((feature) => (
                             <div key={feature} className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium tracking-wide bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 font-montserrat select-none cursor-default">
                                 {feature}
                             </div>

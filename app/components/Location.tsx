@@ -18,27 +18,27 @@ export default function Location() {
             <div className="absolute inset-0 bg-[#F5EEDC]/30 flex items-center justify-center">
               <p className="text-[#183B4E] text-sm font-medium">Map placeholder - Akan dimuat dengan Google Maps</p>
             </div>
-            
+
             {/* Google Maps Embed */}
-            { 
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5019550207128!2d100.45104873829598!3d6.130174798464183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b4f3817f2bc89%3A0x171f1f16f7a2f057!2sKampung%20Telok%20Jamat!5e0!3m2!1sen!2smy!4v1743237281150!5m2!1sen!2smy" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Tuah Cemerlang Homestay Location"
-              className="absolute inset-0"
-            ></iframe> 
+            {
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5019550207128!2d100.45104873829598!3d6.130174798464183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b4f3817f2bc89%3A0x171f1f16f7a2f057!2sKampung%20Telok%20Jamat!5e0!3m2!1sen!2smy!4v1743237281150!5m2!1sen!2smy"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Tuah Cemerlang Homestay Location"
+                className="absolute inset-0"
+              ></iframe>
             }
           </div>
 
           {/* Contact Info */}
           <div className="bg-white/90 p-6 md:p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-playfair font-semibold text-[#27548A] mb-6">Maklumat Perhubungan</h3>
-            
+
             <div className="space-y-5">
               <div className="flex items-start">
                 <div className="bg-[#F5EEDC] p-3 rounded-full mr-4">
@@ -54,8 +54,8 @@ export default function Location() {
                     Tuah Cemerlang Homestay<br />
                     No 124<br />
                     Kampung Teluk Jamat<br />
-                    06400 Pokok Sena<br/>
-                    Kedah Darul Aman<br/>
+                    06400 Pokok Sena<br />
+                    Kedah Darul Aman<br />
 
                   </p>
                 </div>
@@ -99,18 +99,18 @@ export default function Location() {
               </div>
 
               <div className="mt-8 pt-4 border-t border-gray-200">
-                <Link 
-                  href="https://www.waze.com/en/live-map/directions/my/kedah/pokok-sena/kampung-telok-jamat?place=ChIJibzyFzhPSzARV_Ci9xYfHxc" 
-                  target="_blank" 
+                <Link
+                  href="https://www.waze.com/en/live-map/directions/my/kedah/pokok-sena/kampung-telok-jamat?place=ChIJibzyFzhPSzARV_Ci9xYfHxc"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-white bg-[#27548A] rounded-lg shadow-md hover:bg-[#183B4E] transition-all duration-300"
                 >
                   <div className="relative w-5 h-5 mr-2">
-                    <Image 
-                      src="/waze-logo.png" 
-                      alt="Waze Logo" 
-                      width={20} 
-                      height={20} 
+                    <Image
+                      src="/waze-logo.png"
+                      alt="Waze Logo"
+                      width={20}
+                      height={20}
                       className="object-contain"
                     />
                   </div>

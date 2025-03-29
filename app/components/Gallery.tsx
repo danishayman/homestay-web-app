@@ -101,7 +101,7 @@ export default function Gallery() {
 
                 <div
                     className={`relative w-full max-w-4xl mx-auto overflow-hidden ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
-                    style={{ 
+                    style={{
                         perspective: '1000px',
                         WebkitTapHighlightColor: 'transparent',
                         WebkitTouchCallout: 'none',
@@ -130,7 +130,7 @@ export default function Gallery() {
                             // Apply different styles based on position
                             const isActive = distance === 0;
                             const zIndex = 10 - Math.abs(normalizedDistance);
-                            
+
                             // Determine blur and darkness based on distance
                             const blurAmount = Math.abs(normalizedDistance) * 3; // px
                             const darknessAmount = 0.6 + (Math.abs(normalizedDistance) * 0.15); // 0.6 to 0.9
@@ -171,8 +171,8 @@ export default function Gallery() {
                                             />
                                             {/* Image overlay for non-active cards */}
                                             {!isActive && (
-                                                <div 
-                                                    className="absolute inset-0 bg-black transition-opacity duration-300 select-none" 
+                                                <div
+                                                    className="absolute inset-0 bg-black transition-opacity duration-300 select-none"
                                                     style={{ opacity: darknessAmount }}
                                                 />
                                             )}
@@ -213,9 +213,8 @@ export default function Gallery() {
                             <button
                                 key={index}
                                 onClick={() => setCurrentIndex(index)}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                    currentIndex === index ? 'bg-white scale-125' : 'bg-white/40'
-                                } select-none`}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentIndex === index ? 'bg-white scale-125' : 'bg-white/40'
+                                    } select-none`}
                                 aria-label={`Go to image ${index + 1}`}
                             />
                         ))}

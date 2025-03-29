@@ -12,7 +12,7 @@ export default function Footer() {
                     <h3 className="font-playfair text-3xl font-bold text-[#DDA853] mb-2">Tuah Cemerlang</h3>
                     <h4 className="font-montserrat text-xl text-white/90">Homestay</h4>
                 </div>
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {/* Column 1: Logo and About */}
                     <div className="hidden sm:block">
@@ -24,7 +24,7 @@ export default function Footer() {
                             Nikmati penginapan yang selesa dengan pemandangan indah di kawasan kampung. Sesuai untuk percutian keluarga dan kumpulan.
                         </p>
                     </div>
-                    
+
                     {/* Column 2: Quick Links */}
                     <div>
                         <h3 className="font-montserrat font-semibold text-lg mb-4 text-[#F5EEDC] text-center sm:text-left">Pautan Pantas</h3>
@@ -58,7 +58,7 @@ export default function Footer() {
                             </ul>
                         </nav>
                     </div>
-                    
+
                     {/* Column 3: Contact */}
                     <div className="mt-4 sm:mt-0">
                         <h3 className="font-montserrat font-semibold text-lg mb-4 text-[#F5EEDC] text-center sm:text-left">Hubungi Kami</h3>
@@ -76,7 +76,7 @@ export default function Footer() {
                                     Perak Darul Ridzuan
                                 </address>
                             </div>
-                            
+
                             <div className="flex items-center space-x-3 justify-center sm:justify-start">
                                 <div className="text-[#DDA853] flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -87,7 +87,7 @@ export default function Footer() {
                                     +6017-415 6105
                                 </Link>
                             </div>
-                            
+
                             <div className="flex items-center space-x-3 justify-center sm:justify-start">
                                 <div className="text-[#DDA853] flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,7 +99,7 @@ export default function Footer() {
                                 </Link>
                             </div>
                         </div>
-                        
+
                         {/* Social Media Icons */}
                         <div className="mt-6 text-center sm:text-left">
                             <h4 className="font-montserrat text-sm font-semibold mb-3 text-[#F5EEDC]">Ikuti Kami</h4>
@@ -128,7 +128,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Copyright */}
                 <div className="mt-8 sm:mt-10 pt-6 border-t border-white/10 text-center">
                     <p className="text-white/60 text-xs font-montserrat">

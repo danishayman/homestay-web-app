@@ -22,18 +22,18 @@ export default function ScrollArrow({ targetId }: ScrollArrowProps) {
         aria-label="Scroll down to see more"
       >
         <span className="text-white text-sm font-medium mb-2 tracking-widest opacity-80">Let&apos;s Go!</span>
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="white" 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="white"
           className="w-8 h-8"
         >
-          <path 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            strokeWidth={2} 
-            d="M19 9l-7 7-7-7" 
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
           />
         </svg>
       </button>

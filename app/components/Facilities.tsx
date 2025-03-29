@@ -14,12 +14,12 @@ const Facility = ({ title, description, imagePath }: FacilityProps) => {
                     <p className="text-[#183B4E] text-sm font-medium">Image placeholder: {title}</p>
                 </div>
                 {/* Image component with hover effect */}
-                {<Image 
-          src={imagePath} 
-          alt={title} 
-          fill 
-          className="object-cover transition-transform duration-500 hover:scale-110" 
-        /> }
+                {<Image
+                    src={imagePath}
+                    alt={title}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-110"
+                />}
             </div>
             <h3 className="text-xl font-playfair font-semibold text-[#27548A] mb-2">{title}</h3>
             <p className="text-center text-[#183B4E] font-montserrat text-sm">{description}</p>

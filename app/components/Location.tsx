@@ -6,7 +6,7 @@ export default function Location() {
     <section id="location" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]/90">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Alamat & Lokasi</h2>
+          <h2 className="text-4xl md:text-6xl font-playfair font-bold text-[#183B4E] mb-4">Alamat & Lokasi</h2>
           <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
             Mudah untuk dicari, senang untuk sampai. Lokasi strategik dengan pemandangan indah.
           </p>

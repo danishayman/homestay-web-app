@@ -103,12 +103,12 @@ export default function Faq() {
 
                 <div className="mt-8 text-center">
                     <p className="text-[#183B4E]/90 font-montserrat text-sm">
-                        Mempunyai pertanyaan lain? Hubungi kami di{' '}
+                        Mempunyai pertanyaan lain? Hubungi kami di <br/>{' '}
                         <a
                             href="tel:+60174156105"
                             className="text-[#27548A] font-semibold hover:text-[#183B4E] transition-colors duration-300"
                         >
-                            +6017-4156105
+                            +6017-415 6105
                         </a>
                     </p>
                 </div>

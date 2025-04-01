@@ -80,7 +80,7 @@ export default function Faq() {
     };
 
     return (
-        <section id="faq" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]/90">
+        <section id="faq" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]">
             <div className="max-w-3xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-6xl font-playfair font-bold text-[#183B4E] mb-4">Soalan Lazim</h2>

@@ -7,6 +7,7 @@ import NearbyAttractions from "./components/NearbyAttractions";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AvailabilityCalendar from "./components/AvailabilityCalendar";
 
 // Font configuration
 const montserrat = Montserrat({ 
@@ -40,6 +41,9 @@ export default function Home() {
 
       {/* Nearby Attractions Section */}
       <NearbyAttractions />
+      
+      {/* Availability Calendar Section */}
+      <AvailabilityCalendar />
 
       {/* FAQ Section */}
       <Faq />

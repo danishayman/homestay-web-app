@@ -13,6 +13,7 @@ This is a modern, responsive website for Tuah Cemerlang Homestay, a beautiful ho
 - 🛋️ **Facilities Showcase** - Highlighting all available amenities
 - 📍 **Location Information** - Easy-to-find address and map integration
 - 🏞️ **Nearby Attractions** - Information about interesting places to visit
+- 📅 **Availability Calendar** - Google Calendar integration showing booked dates
 - ❓ **FAQ Section** - Answering common questions about the homestay
 - 📱 **Mobile-Friendly Design** - Fully responsive for all device sizes
 - 💬 **WhatsApp Integration** - Quick booking through WhatsApp

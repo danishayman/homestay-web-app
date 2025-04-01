@@ -97,9 +97,9 @@ export default function AvailabilityCalendar() {
     <section id="availability" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Ketersediaan</h2>
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Kekosongan</h2>
           <p className="text-[#27548A] font-montserrat max-w-2xl mx-auto">
-            Semak tarikh ketersediaan Tuah Cemerlang Homestay untuk perancangan percutian anda.
+            Semak tarikh kekosongan Tuah Cemerlang Homestay untuk perancangan percutian anda.
           </p>
         </div>
         

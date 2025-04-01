@@ -72,7 +72,6 @@ export default function AvailabilityCalendar() {
   // Generate calendar days for current month view
   const monthStart = startOfMonth(currentDate);
   const monthEnd = endOfMonth(currentDate);
-  const days = eachDayOfInterval({ start: monthStart, end: monthEnd });
   
   // Get the start and end dates for calendar view (including days from prev/next months)
   const calendarStartDate = new Date(monthStart);

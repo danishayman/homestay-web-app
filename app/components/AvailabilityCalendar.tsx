@@ -74,6 +74,18 @@ export default function AvailabilityCalendar() {
   const monthEnd = endOfMonth(currentDate);
   const days = eachDayOfInterval({ start: monthStart, end: monthEnd });
   
+  // Get the start and end dates for calendar view (including days from prev/next months)
+  const calendarStartDate = new Date(monthStart);
+  const dayOfWeek = monthStart.getDay();
+  calendarStartDate.setDate(monthStart.getDate() - dayOfWeek);
+  
+  const calendarEndDate = new Date(monthEnd);
+  const endDayOfWeek = monthEnd.getDay();
+  calendarEndDate.setDate(monthEnd.getDate() + (6 - endDayOfWeek));
+  
+  // Get all days to display in the calendar grid (from prev month + current month + next month)
+  const calendarDays = eachDayOfInterval({ start: calendarStartDate, end: calendarEndDate });
+  
   // Check if a date is booked
   const isDateBooked = (date: Date) => {
     return events.some(event => {
@@ -171,7 +183,7 @@ export default function AvailabilityCalendar() {
                 
                 {/* Calendar Days */}
                 <div className="grid grid-cols-7 gap-2">
-                  {days.map(day => {
+                  {calendarDays.map(day => {
                     const isBooked = isDateBooked(day);
                     const isCurrentMonth = isSameMonth(day, currentDate);
                     const isToday = isSameDay(day, new Date());

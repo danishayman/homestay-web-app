@@ -102,13 +102,6 @@ export default function AvailabilityCalendar() {
     });
   };
   
-  // Get day status class
-  const getDayStatusClass = (date: Date) => {
-    if (!isSameMonth(date, currentDate)) return 'text-gray-300';
-    if (isDateBooked(date)) return 'bg-red-100 text-red-800';
-    return 'bg-green-100 text-green-800';
-  };
-  
   // Week day headers
   const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   

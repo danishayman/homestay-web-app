@@ -2,13 +2,25 @@
 
 import { useState, useEffect } from 'react';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths } from 'date-fns';
-import ms from 'ms';
 
 type CalendarEvent = {
   start: Date;
   end: Date;
   summary: string;
 };
+
+// Define the event type from Google Calendar API
+interface GoogleCalendarEvent {
+  summary: string;
+  start: {
+    dateTime?: string;
+    date?: string;
+  };
+  end: {
+    dateTime?: string;
+    date?: string;
+  };
+}
 
 export default function AvailabilityCalendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -41,9 +53,9 @@ export default function AvailabilityCalendar() {
         }
         
         const data = await response.json();
-        setEvents(data.events.map((event: any) => ({
-          start: new Date(event.start.dateTime || event.start.date),
-          end: new Date(event.end.dateTime || event.end.date),
+        setEvents(data.events.map((event: GoogleCalendarEvent) => ({
+          start: new Date(event.start.dateTime || event.start.date || ''),
+          end: new Date(event.end.dateTime || event.end.date || ''),
           summary: event.summary
         })));
       } catch (err) {

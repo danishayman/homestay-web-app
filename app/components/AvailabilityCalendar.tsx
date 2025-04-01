@@ -76,11 +76,30 @@ export default function AvailabilityCalendar() {
   
   // Check if a date is booked
   const isDateBooked = (date: Date) => {
-    return events.some(event => 
-      (event.summary.toUpperCase().includes('BOOKED') || event.summary.toUpperCase().includes('TEMPAHAN')) && 
-      (isSameDay(date, event.start) || 
-        (date >= event.start && date <= event.end))
-    );
+    return events.some(event => {
+      const isRelevantEvent = event.summary.toUpperCase().includes('BOOKED') || 
+                              event.summary.toUpperCase().includes('TEMPAHAN');
+      
+      // Check if it's an all-day event (no time portion in the dates)
+      const isAllDayEvent = event.start.toString().includes('00:00:00') && 
+                            event.end.toString().includes('00:00:00');
+      
+      if (isRelevantEvent) {
+        if (isAllDayEvent) {
+          // For all-day events, end date is exclusive (don't include it)
+          const eventEndDate = new Date(event.end);
+          eventEndDate.setDate(eventEndDate.getDate() - 1);
+          return isSameDay(date, event.start) || 
+                (date >= event.start && date <= eventEndDate);
+        } else {
+          // For events with specific times, use normal range check
+          return isSameDay(date, event.start) || 
+                (date >= event.start && date <= event.end);
+        }
+      }
+      
+      return false;
+    });
   };
   
   // Get day status class

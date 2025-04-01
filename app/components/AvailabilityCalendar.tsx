@@ -116,7 +116,7 @@ export default function AvailabilityCalendar() {
     <section id="availability" className="py-16 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#F5EEDC]/90">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4">Kekosongan</h2>
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-[#183B4E] mb-4 animate-fadeIn">Kekosongan</h2>
           <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
             Semak tarikh kekosongan Tuah Cemerlang Homestay untuk perancangan percutian anda.
           </p>
@@ -128,24 +128,24 @@ export default function AvailabilityCalendar() {
           </div>
         )}
         
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl">
           {/* Calendar Header */}
-          <div className="bg-[#183B4E] text-white p-4 flex justify-between items-center">
+          <div className="bg-gradient-to-r from-[#183B4E] to-[#27548A] text-white p-5 flex justify-between items-center">
             <button 
               onClick={prevMonth} 
-              className="p-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+              className="p-2 rounded-full hover:bg-white/20 active:bg-white/30 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/50"
               aria-label="Previous month"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <h3 className="font-montserrat font-semibold text-lg">
+            <h3 className="font-montserrat font-semibold text-lg tracking-wide">
               {format(currentDate, 'MMMM yyyy')}
             </h3>
             <button 
               onClick={nextMonth} 
-              className="p-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+              className="p-2 rounded-full hover:bg-white/20 active:bg-white/30 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/50"
               aria-label="Next month"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -155,66 +155,91 @@ export default function AvailabilityCalendar() {
           </div>
           
           {/* Calendar Grid */}
-          <div className="p-4">
+          <div className="p-5">
             {loading ? (
-              <div className="flex justify-center items-center py-20">
-                <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#27548A]"></div>
+              <div className="flex justify-center items-center py-24">
+                <div className="relative">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-t-2 border-[#27548A]"></div>
+                  <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                </div>
               </div>
             ) : (
-              <>
+              <div className="animate-fadeIn">
                 {/* Week Days */}
-                <div className="grid grid-cols-7 gap-1 mb-2">
+                <div className="grid grid-cols-7 gap-2 mb-3">
                   {weekDays.map(day => (
-                    <div key={day} className="text-center font-montserrat font-semibold text-[#183B4E]">
+                    <div key={day} className="text-center font-montserrat font-semibold text-[#183B4E]/80 py-2">
                       {day}
                     </div>
                   ))}
                 </div>
                 
                 {/* Calendar Days */}
-                <div className="grid grid-cols-7 gap-1">
-                  {days.map(day => (
-                    <div 
-                      key={day.toString()} 
-                      className={`
-                        p-2 text-center rounded-md font-montserrat
-                        ${getDayStatusClass(day)}
-                        hover:opacity-90 transition-opacity duration-200
-                      `}
-                    >
-                      <span className="inline-block w-full text-sm sm:text-base">
-                        {format(day, 'd')}
-                      </span>
-                    </div>
-                  ))}
+                <div className="grid grid-cols-7 gap-2">
+                  {days.map(day => {
+                    const isBooked = isDateBooked(day);
+                    const isCurrentMonth = isSameMonth(day, currentDate);
+                    const isToday = isSameDay(day, new Date());
+                    
+                    return (
+                      <div 
+                        key={day.toString()} 
+                        className={`
+                          relative p-2 sm:p-3 text-center rounded-lg font-montserrat
+                          transition-all duration-200 transform
+                          ${!isCurrentMonth ? 'text-gray-300 hover:bg-gray-50' : ''}
+                          ${isBooked && isCurrentMonth ? 'bg-red-100 text-red-800 hover:bg-red-200' : ''}
+                          ${!isBooked && isCurrentMonth ? 'bg-green-100 text-green-800 hover:bg-green-200' : ''}
+                          ${isToday ? 'ring-2 ring-blue-400' : ''}
+                          hover:scale-105
+                        `}
+                      >
+                        <span className="inline-block w-full text-sm sm:text-base">
+                          {format(day, 'd')}
+                        </span>
+                        {isToday && (
+                          <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
-              </>
+              </div>
             )}
           </div>
           
           {/* Legend */}
-          <div className="border-t border-gray-200 p-4">
-            <div className="flex justify-center items-center space-x-6">
+          <div className="border-t border-gray-200 p-4 bg-gray-50">
+            <div className="flex justify-center items-center space-x-8">
               <div className="flex items-center">
-                <div className="w-4 h-4 bg-green-100 rounded-full mr-2"></div>
+                <div className="w-4 h-4 bg-green-100 rounded-md border border-green-300 mr-2"></div>
                 <span className="text-sm text-[#183B4E] font-montserrat">Tersedia</span>
               </div>
               <div className="flex items-center">
-                <div className="w-4 h-4 bg-red-100 rounded-full mr-2"></div>
+                <div className="w-4 h-4 bg-red-100 rounded-md border border-red-300 mr-2"></div>
                 <span className="text-sm text-[#183B4E] font-montserrat">Telah Ditempah</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-4 h-4 border-2 border-blue-400 rounded-md mr-2"></div>
+                <span className="text-sm text-[#183B4E] font-montserrat">Hari Ini</span>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="mt-6 text-center">
-          <p className="text-[#183B4E]/80 font-montserrat text-sm">
+        <div className="mt-8 text-center">
+          <p className="text-[#183B4E]/80 font-montserrat text-sm bg-white rounded-lg p-4 shadow-md inline-block">
             Untuk menempah tarikh yang tersedia, sila hubungi kami melalui WhatsApp. 
             <a 
               href="https://wa.me/60174156105?text=Tuah%20Cemerlang%20Homestay%20-%20Saya%20berminat%20untuk%20tempah%20homestay." 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center ml-1 text-[#27548A] hover:text-[#183B4E] font-medium"
+              className="inline-flex items-center ml-1 text-[#27548A] hover:text-[#183B4E] font-medium hover:underline transition-colors duration-200"
             >
               <span>+60 17-415 6105</span>
               <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

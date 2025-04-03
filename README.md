@@ -13,7 +13,7 @@ This is a modern, responsive website for Tuah Cemerlang Homestay, a beautiful ho
 - 🛋️ **Facilities Showcase** - Highlighting all available amenities
 - 📍 **Location Information** - Easy-to-find address and map integration
 - 🏞️ **Nearby Attractions** - Information about interesting places to visit
-- 📅 **Availability Calendar** - Google Calendar integration showing booked dates
+- 📅 **Availability Calendar** - Real-time booking status with Google Calendar integration
 - ❓ **FAQ Section** - Answering common questions about the homestay
 - 📱 **Mobile-Friendly Design** - Fully responsive for all device sizes
 - 💬 **WhatsApp Integration** - Quick booking through WhatsApp
@@ -92,6 +92,18 @@ This is a modern, responsive website for Tuah Cemerlang Homestay, a beautiful ho
 └─ tsconfig.json
 ```
 
+## 📅 Availability Calendar
+
+The availability calendar is a key feature that provides real-time booking status for the homestay:
+
+- **Google Calendar Integration** - Syncs directly with a Google Calendar to show booked dates
+- **Color-Coded Dates** - Green for available dates, red for booked dates
+- **Month Navigation** - Easy browsing through different months
+- **Visual Indicators** - Current day highlighting and responsive design
+- **Automatic Updates** - Calendar refreshes when bookings are added/removed in Google Calendar
+- **Multiple Language Support** - Interface in Bahasa Malaysia for local users
+
+The implementation uses the Google Calendar API with a service account for secure, read-only access to the booking calendar. Events with "BOOKED" or "TEMPAHAN" in the title automatically appear as unavailable dates in the calendar.
 
 ## 📱 Mobile Optimization
 

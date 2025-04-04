@@ -115,7 +115,7 @@ This website is fully optimized for mobile devices with:
 
 ## 🔄 Deployment
 <br>
-The website is deployed using Vercel for continuous integration and delivery.
+The website is deployed using <a href="https://vercel.com/">Vercel</a> for continuous integration and delivery.
 
 <br>
 

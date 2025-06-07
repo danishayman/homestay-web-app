@@ -13,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ms" className="scroll-smooth">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Zagreus" />
+      </head>
       <body className="antialiased">
         {children}
       </body>

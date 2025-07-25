@@ -31,27 +31,27 @@ export default function Facilities() {
     const facilitiesList = [
         {
             title: "Kolam Renang",
-            description: "Nikmati masa santai berenang di kolam renang yang dikelilingi oleh pemandangan indah.",
+            description: "Nikmati masa santai berenang di kolam renang untuk dewasa dan kanak-kanak.",
             imagePath: "/facilities/kolam.jpg"
         },
+        // {
+        //     title: "ATV",
+        //     description: "Jelajahi kawasan sekitar dengan menaiki ATV melalui trek yang menarik.",
+        //     imagePath: "/facilities/atv.jpg"
+        // },
+        // {
+        //     title: "Dusun Buah",
+        //     description: "Nikmati pengalaman unik dengan pemandangan dusun buah-buahan yang menghijau di sekeliling homestay.",
+        //     imagePath: "/facilities/dusun.jpg"
+        // },
+        // {
+        //     title: "WiFi Percuma",
+        //     description: "Kekal berhubung dengan WiFi berkelajuan tinggi yang tersedia di seluruh homestay.",
+        //     imagePath: "/facilities/wifi.jpg"
+        // },
         {
-            title: "ATV",
-            description: "Jelajahi kawasan sekitar dengan menaiki ATV melalui trek yang menarik.",
-            imagePath: "/facilities/atv.jpg"
-        },
-        {
-            title: "Dusun Buah",
-            description: "Nikmati pengalaman unik dengan pemandangan dusun buah-buahan yang menghijau di sekeliling homestay.",
-            imagePath: "/facilities/dusun.jpg"
-        },
-        {
-            title: "WiFi Percuma",
-            description: "Kekal berhubung dengan WiFi berkelajuan tinggi yang tersedia di seluruh homestay.",
-            imagePath: "/facilities/wifi.jpg"
-        },
-        {
-            title: "Ruang Memasak",
-            description: "Ruang memasak yang lengkap untuk memudahkan tetamu menyediakan hidangan sendiri.",
+            title: "Dapur Memasak",
+            description: "Dapur memasak yang lengkap untuk memudahkan tetamu menyediakan hidangan sendiri.",
             imagePath: "/facilities/dapur.jpg"
         },
         {

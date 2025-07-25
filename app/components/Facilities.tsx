@@ -59,6 +59,11 @@ export default function Facilities() {
             description: "Nikmati pengalaman unik dengan pemandangan sawah padi yang menghijau di sekeliling homestay.",
             imagePath: "/facilities/padi.jpg"
         },
+        {
+            title: "Ruang Santai",
+            description: "Ruang istirehat yang selesa untuk berehat dan menikmati suasana kampung dan pemandangan kolam.",
+            imagePath: "/facilities/santai.jpg"
+        }
     ];
 
     return (

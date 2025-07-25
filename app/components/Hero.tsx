@@ -88,7 +88,7 @@ export default function Hero() {
                         </Link>
 
                         <Link
-                            href="https://www.tiktok.com/@tuahcemerlanghomestay?_t=ZS-8yG7OHszop7&_r=1"
+                            href="https://www.tiktok.com/@tuahcemerlanghomestay"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group p-3 bg-[#000000] backdrop-blur-sm rounded-full hover:bg-[#333333] transition-all duration-300 hover:translate-y-[-2px] active:translate-y-0"

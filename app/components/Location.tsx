@@ -99,23 +99,43 @@ export default function Location() {
               </div>
 
               <div className="mt-8 pt-4 border-t border-gray-200">
-                <Link
-                  href="https://www.waze.com/en/live-map/directions/my/kedah/pokok-sena/kampung-telok-jamat?place=ChIJibzyFzhPSzARV_Ci9xYfHxc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-white bg-[#27548A] rounded-lg shadow-md hover:bg-[#183B4E] transition-all duration-300"
-                >
-                  <div className="relative w-5 h-5 mr-2">
-                    <Image
-                      src="/waze-logo.png"
-                      alt="Waze Logo"
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                  </div>
-                  Waze
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Link
+                    href="https://www.waze.com/en/live-map/directions/my/kedah/pokok-sena/kampung-telok-jamat?place=ChIJibzyFzhPSzARV_Ci9xYfHxc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-[#183B4E] bg-white border border-gray-300 rounded-lg shadow-md hover:bg-gray-50 transition-all duration-300"
+                  >
+                    <div className="relative w-5 h-5 mr-2">
+                      <Image
+                        src="/waze-logo.png"
+                        alt="Waze Logo"
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                    </div>
+                    Waze
+                  </Link>
+                  
+                  <Link
+                    href="https://www.google.com/maps/dir//Tuah+Cemerlang+Homestay,+124,+Kampung+Teluk+Jamat,+06400+Pokok+Sena,+Kedah/@6.1304303,100.4553204,17z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-[#183B4E] bg-white border border-gray-300 rounded-lg shadow-md hover:bg-gray-50 transition-all duration-300"
+                  >
+                    <div className="relative w-5 h-5 mr-2">
+                      <Image
+                        src="/google-maps-logo.svg"
+                        alt="Google Maps Logo"
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                    </div>
+                    Google Maps
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

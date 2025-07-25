@@ -131,7 +131,7 @@ export default function Gallery() {
                     onMouseUp={handleMouseUp}
                     onMouseLeave={handleMouseUp}
                 >
-                    <div className="flex justify-center items-center min-h-[450px] sm:min-h-[550px] relative select-none">
+                    <div className="flex justify-center items-center min-h-[600px] sm:min-h-[750px] relative select-none">
                         {galleryImages.map((image, index) => {
                             // Calculate distance from the current index
                             const distance = (index - currentIndex + galleryImages.length) % galleryImages.length;
@@ -156,8 +156,8 @@ export default function Gallery() {
                                     className={`absolute rounded-xl shadow-2xl transition-all duration-300 ease-out ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
                                     style={{
                                         zIndex,
-                                        transform: `translateX(${normalizedDistance * 65}px) 
-                                scale(${1 - Math.abs(normalizedDistance) * 0.15}) 
+                                        transform: `translateX(${normalizedDistance * 80}px) 
+                                scale(${1 - Math.abs(normalizedDistance) * 0.12}) 
                                 rotateY(${normalizedDistance * -5}deg)`,
                                         opacity: 1 - Math.abs(normalizedDistance) * 0.3,
                                         filter: !isActive ? `brightness(${1 - Math.abs(normalizedDistance) * 0.3})` : 'none',
@@ -165,7 +165,7 @@ export default function Gallery() {
                                         WebkitTouchCallout: 'none',
                                     }}
                                 >
-                                    <div className="relative w-[280px] sm:w-[400px] h-[400px] sm:h-[500px] overflow-hidden rounded-xl border-4 border-white bg-white select-none">
+                                    <div className="relative w-[350px] sm:w-[500px] h-[500px] sm:h-[650px] overflow-hidden rounded-xl border-4 border-white bg-white select-none">
                                         {/* Card top part with image */}
                                         <div className={`relative w-full h-[85%] overflow-hidden ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}>
                                             <Image

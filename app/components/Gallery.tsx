@@ -18,11 +18,23 @@ const galleryImages = [
     },
     {
         src: '/gallery/image4.jpg',
-        alt: 'Bilik Tidur',
+        alt: 'Bilik Tidur Utama',
     },
     {
         src: '/gallery/image5.jpg',
         alt: 'Kolam Renang',
+    },
+        {
+        src: '/gallery/image6.jpg',
+        alt: 'Ruang Makan',
+    },
+        {
+        src: '/gallery/image7.jpg',
+        alt: 'Bilik Tidur 2',
+    },
+        {
+        src: '/gallery/image8.jpg',
+        alt: 'Bilik Tidur 3',
     },
 ];
 

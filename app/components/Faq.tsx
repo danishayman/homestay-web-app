@@ -49,11 +49,11 @@ export default function Faq() {
         },
         {
             question: "Adakah tempat ini sesuai untuk keluarga dengan anak-anak?",
-            answer: "Ya, homestay kami sangat sesuai untuk keluarga. Kami menyediakan kawasan luas untuk anak-anak bermain, termasuk kawasan kolam renang yang diawasi. Lokasi yang berhampiran sawah padi dan dusun juga menawarkan pengalaman pendidikan untuk anak-anak."
+            answer: "Ya, homestay kami sangat sesuai untuk keluarga. Kami menyediakan kawasan luas untuk anak-anak bermain, termasuk kawasan kolam renang untuk dewasa."
         },
         {
             question: "Berapa kadar sewa untuk satu malam?",
-            answer: "Kadar sewa bermula dari RM300 semalam. Hubungi kami melalui WhatsApp untuk mendapatkan harga berdasarkan keperluan anda."
+            answer: "Kadar sewa bermula dari RM 350 semalam. Hubungi kami melalui WhatsApp untuk mendapatkan harga berdasarkan keperluan anda."
         },
         {
             question: "Adakah tetamu boleh menggunakan kolam renang?",
@@ -61,15 +61,15 @@ export default function Faq() {
         },
         {
             question: "Apakah kemudahan yang disediakan dalam homestay?",
-            answer: "Homestay kami dilengkapi dengan WiFi percuma, TV, penghawa dingin di semua bilik, dapur lengkap, mesin basuh, ruang BBQ, tempat letak kereta dan aksesori asas seperti tuala dan kelengkapan mandian."
+            answer: "Homestay kami dilengkapi TV, penghawa dingin di semua bilik, dapur lengkap, tempat letak kereta dan ruang serta peralatan BBQ."
         },
         {
             question: "Adakah aktiviti yang boleh dilakukan di sekitar homestay?",
-            answer: "Terdapat pelbagai aktiviti di sekitar homestay termasuk naik ATV, lawatan ke sawah padi dan dusun, aktiviti dalam kolam renang, serta lawatan ke tempat-tempat menarik berhampiran seperti Muzium Padi."
+            answer: "Terdapat pelbagai aktiviti di sekitar homestay termasuk lawatan ke sawah padi, aktiviti dalam kolam renang, aktiviti BBQ, serta lawatan ke tempat-tempat menarik berhampiran"
         },
         {
             question: "Bagaimana saya boleh menempah homestay?",
-            answer: "Penempahan boleh dibuat melalui WhatsApp kami di +6017-415 6105. Deposit sebanyak 50% diperlukan untuk mengesahkan tempahan, dan baki perlu dijelaskan semasa daftar masuk."
+            answer: "Penempahan boleh dibuat melalui WhatsApp kami di +6017-524 0056."
         }
     ];
 
@@ -108,7 +108,7 @@ export default function Faq() {
                             href="tel:+60175240056"
                             className="text-[#27548A] font-semibold hover:text-[#183B4E] transition-colors duration-300"
                         >
-                            +6017-415 6105
+                            +6017-524 0056
                         </a>
                     </p>
                 </div>

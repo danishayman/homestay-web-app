@@ -72,7 +72,7 @@ export default function Location() {
                 <div>
                   <h4 className="font-montserrat font-semibold text-[#183B4E]">Telefon</h4>
                   <p className="mt-1">
-                    <Link href="tel:+60174156105" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
+                    <Link href="tel:+60175240056" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
                       +6017-415 6105
                     </Link>
                   </p>

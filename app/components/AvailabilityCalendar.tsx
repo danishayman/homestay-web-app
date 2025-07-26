@@ -240,7 +240,7 @@ export default function AvailabilityCalendar() {
           <p className="text-[#183B4E]/80 font-montserrat text-sm bg-white rounded-lg p-4 shadow-md inline-block">
             Untuk menempah tarikh yang tersedia, sila hubungi kami melalui WhatsApp. 
             <a 
-              href="https://wa.me/60174156105?text=Tuah%20Cemerlang%20Homestay%20-%20Saya%20berminat%20untuk%20tempah%20homestay." 
+              href="https://wa.me/60175240056?text=Tuah%20Cemerlang%20Homestay%20-%20Saya%20berminat%20untuk%20tempah%20homestay." 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center ml-1 text-[#27548A] hover:text-[#183B4E] font-medium hover:underline transition-colors duration-200"

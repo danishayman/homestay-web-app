@@ -105,7 +105,7 @@ export default function Faq() {
                     <p className="text-[#183B4E]/90 font-montserrat text-sm">
                         Mempunyai pertanyaan lain? Hubungi kami di <br/>{' '}
                         <a
-                            href="tel:+60174156105"
+                            href="tel:+60175240056"
                             className="text-[#27548A] font-semibold hover:text-[#183B4E] transition-colors duration-300"
                         >
                             +6017-415 6105

@@ -8,6 +8,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AvailabilityCalendar from "./components/AvailabilityCalendar";
+import { Analytics } from "@vercel/analytics/next"
 
 // Font configuration
 const montserrat = Montserrat({ 
@@ -29,6 +30,9 @@ export default function Home() {
     <div className={`${montserrat.variable} ${playfair.variable} font-sans`}>
       {/* Hero Section */}
       <Hero />
+
+      {/* Analytics Component */}
+      <Analytics />
 
       {/* Gallery Section */}
       <Gallery />

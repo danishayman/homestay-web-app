@@ -96,6 +96,13 @@ export default function NearbyAttractions() {
             imagePath: "/attractions/pekan-rabu.jpg",
             linkUrl: "https://maps.app.goo.gl/PsTwarEm127RkoK36"
         },
+        {
+            title: "Hospital Sultanah Bahiyah",
+            description: "Hospital utama di Kedah dengan pelbagai kemudahan perubatan dan pakar.",
+            distance: "5 min",
+            imagePath: "/attractions/hospital-sultanah-bahiyah.jpg",
+            linkUrl: "https://maps.app.goo.gl/PMANWERJTUxZqBzB9"
+        },
     ];
 
     return (

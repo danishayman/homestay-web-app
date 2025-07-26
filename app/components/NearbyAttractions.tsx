@@ -26,9 +26,9 @@ const Attraction = ({ title, description, distance, imagePath, linkUrl }: Attrac
             </div>
 
             <div className="p-4">
-                <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-playfair font-semibold text-[#27548A]">{title}</h3>
-                    <span className="text-xs bg-[#F5EEDC] text-[#183B4E] px-2 py-1 rounded-full font-montserrat font-medium">
+                <div className="flex justify-between items-start mb-2 gap-2">
+                    <h3 className="text-lg font-playfair font-semibold text-[#27548A] flex-1 min-w-0">{title}</h3>
+                    <span className="text-xs bg-[#F5EEDC] text-[#183B4E] px-2 py-1 rounded-full font-montserrat font-medium whitespace-nowrap flex-shrink-0">
                         {distance}
                     </span>
                 </div>
@@ -103,6 +103,15 @@ export default function NearbyAttractions() {
             imagePath: "/attractions/hospital-sultanah-bahiyah.jpg",
             linkUrl: "https://maps.app.goo.gl/PMANWERJTUxZqBzB9"
         },
+        {
+            title: "Lapangan Terbang Sultan Abdul Halim",
+            description: "Lapangan terbang utama di Kedah yang menghubungkan negeri ini dengan destinasi lain.",
+            distance: "20 min",
+            imagePath: "/attractions/lapangan-terbang.jpg",
+            linkUrl: "https://maps.app.goo.gl/2tviEyF1njjzG73P9"
+        },
+        
+
     ];
 
     return (

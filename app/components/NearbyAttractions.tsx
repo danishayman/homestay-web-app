@@ -76,9 +76,9 @@ export default function NearbyAttractions() {
             linkUrl: "https://maps.app.goo.gl/ePegdcqnQ2xLJ8i47"
         },
         {
-            title: "Bukit Kokdiang",
+            title: "Bukit Mak Cun",
             description: "Tempat menarik untuk hiking dan menikmati pemandangan indah dari puncak bukit.",
-            distance: "30 min",
+            distance: "50 min",
             imagePath: "/attractions/bukit-kokdiang.jpg",
             linkUrl: "https://maps.app.goo.gl/8WjugKsa97W741wZA"
         },

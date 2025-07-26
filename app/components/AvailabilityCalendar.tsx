@@ -53,11 +53,16 @@ export default function AvailabilityCalendar() {
         }
         
         const data = await response.json();
-        setEvents(data.events.map((event: GoogleCalendarEvent) => ({
+        const processedEvents = data.events.map((event: GoogleCalendarEvent) => ({
           start: new Date(event.start.dateTime || event.start.date || ''),
           end: new Date(event.end.dateTime || event.end.date || ''),
           summary: event.summary
-        })));
+        }));
+        
+        // Debug: Log events to console to help troubleshoot
+        console.log('Calendar events:', processedEvents);
+        
+        setEvents(processedEvents);
       } catch (err) {
         console.error('Error fetching calendar events:', err);
         setError('Unable to load availability calendar. Please try again later.');
@@ -91,21 +96,36 @@ export default function AvailabilityCalendar() {
       const isRelevantEvent = event.summary.toUpperCase().includes('BOOKED') || 
                               event.summary.toUpperCase().includes('TEMPAHAN');
       
-      // Check if it's an all-day event (no time portion in the dates)
-      const isAllDayEvent = event.start.toString().includes('00:00:00') && 
-                            event.end.toString().includes('00:00:00');
-      
       if (isRelevantEvent) {
+        // Create date-only versions for proper comparison (no time component)
+        const checkDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        
+        // Parse start and end dates more carefully
+        const startDate = new Date(event.start);
+        const endDate = new Date(event.end);
+        
+        // Create date-only versions of event dates
+        const eventStartDate = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+        const eventEndDate = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
+        
+        // Check if it's an all-day event
+        // For Google Calendar, all-day events can have different time representations
+        // They might be at 00:00:00 or could be at the local timezone offset (like 08:00:00 for GMT+8)
+        // The key indicator is that start and end have the same time component
+        const isAllDayEvent = (startDate.getHours() === endDate.getHours() && 
+                              startDate.getMinutes() === endDate.getMinutes() && 
+                              startDate.getSeconds() === endDate.getSeconds()) ||
+                              // Or if the summary suggests it's an all-day booking
+                              (event.summary.toUpperCase().includes('BOOKED') || event.summary.toUpperCase().includes('TEMPAHAN'));
+        
         if (isAllDayEvent) {
-          // For all-day events, end date is exclusive (don't include it)
-          const eventEndDate = new Date(event.end);
-          eventEndDate.setDate(eventEndDate.getDate() - 1);
-          return isSameDay(date, event.start) || 
-                (date >= event.start && date <= eventEndDate);
+          // For all-day events, Google Calendar sets the end date to the day AFTER the last day of the event
+          // So if an event is from Sept 14-16, the end date will be Sept 17 00:00:00
+          // We need to exclude the end date from our range
+          return checkDate >= eventStartDate && checkDate < eventEndDate;
         } else {
-          // For events with specific times, use normal range check
-          return isSameDay(date, event.start) || 
-                (date >= event.start && date <= event.end);
+          // For events with specific times, include both start and end dates
+          return checkDate >= eventStartDate && checkDate <= eventEndDate;
         }
       }
       
@@ -245,7 +265,7 @@ export default function AvailabilityCalendar() {
               rel="noopener noreferrer" 
               className="inline-flex items-center ml-1 text-[#27548A] hover:text-[#183B4E] font-medium hover:underline transition-colors duration-200"
             >
-              <span>+60 17-524 0052</span>
+              <span>+60 17-524 0056</span>
               <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>

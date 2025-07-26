@@ -26,11 +26,13 @@ const Attraction = ({ title, description, distance, imagePath, linkUrl }: Attrac
             </div>
 
             <div className="p-4">
-                <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-playfair font-semibold text-[#27548A]">{title}</h3>
-                    <span className="text-xs bg-[#F5EEDC] text-[#183B4E] px-2 py-1 rounded-full font-montserrat font-medium">
-                        {distance}
-                    </span>
+                <div className="mb-2">
+                    <div className="flex justify-end mb-1">
+                        <span className="text-xs bg-[#F5EEDC] text-[#183B4E] px-2 py-1 rounded-full font-montserrat font-medium whitespace-nowrap">
+                            {distance}
+                        </span>
+                    </div>
+                    <h3 className="text-lg font-playfair font-semibold text-[#27548A] leading-tight">{title}</h3>
                 </div>
                 <p className="text-[#183B4E]/80 text-sm font-montserrat mb-4">{description}</p>
 

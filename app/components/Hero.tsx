@@ -64,7 +64,7 @@ export default function Hero() {
                     {/* Social Media Links */}
                     <div className="flex gap-4 mt-6 sm:mt-8 justify-center sm:justify-start">
                         <Link
-                            href="https://www.facebook.com/tuahcemerlanghomestay"
+                            href="https://www.facebook.com/share/1Jd9jnZjX6/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group p-3 bg-[#1877F2] backdrop-blur-sm rounded-full hover:bg-[#166FE5] transition-all duration-300 hover:translate-y-[-2px] active:translate-y-0"

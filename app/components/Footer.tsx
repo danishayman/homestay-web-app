@@ -85,7 +85,7 @@ export default function Footer() {
                                     </svg>
                                 </div>
                                 <Link href="tel:+60175240056" className="text-white/80 hover:text-white text-sm transition-colors duration-300 font-montserrat">
-                                    +6017-415 6105
+                                    +6017-524 0056
                                 </Link>
                             </div>
 

@@ -63,7 +63,13 @@ export default function Facilities() {
             title: "Ruang Santai",
             description: "Ruang istirehat yang selesa untuk menikmati suasana kampung dan pemandangan kolam.",
             imagePath: "/facilities/santai.jpg"
-        }
+        },
+        {
+            title: "Kemudahan BBQ",
+            description: "Ruang khas untuk aktiviti BBQ dengan kemudahan yang lengkap.",
+            imagePath: "/facilities/bbq.jpg"
+        },
+
     ];
 
     return (

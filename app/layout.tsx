@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="ms" className="scroll-smooth">
       <head>
-        <meta name="apple-mobile-web-app-title" content="Zagreus" />
+        <meta name="apple-mobile-web-app-title" content="Homestay" />
       </head>
       <body className="antialiased">
         {children}

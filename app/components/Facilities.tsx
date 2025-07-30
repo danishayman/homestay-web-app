@@ -9,7 +9,7 @@ type FacilityProps = {
 const Facility = ({ title, description, imagePath }: FacilityProps) => {
     return (
         <div className="flex flex-col items-center p-4 bg-white/90 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-            <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
+            <div className="relative w-full h-70 mb-4 overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-[#F5EEDC]/50 flex items-center justify-center">
                     <p className="text-[#183B4E] text-sm font-medium">Image placeholder: {title}</p>
                 </div>
@@ -34,21 +34,6 @@ export default function Facilities() {
             description: "Nikmati masa santai berenang di kolam renang untuk dewasa dan kanak-kanak.",
             imagePath: "/facilities/kolam.jpg"
         },
-        // {
-        //     title: "ATV",
-        //     description: "Jelajahi kawasan sekitar dengan menaiki ATV melalui trek yang menarik.",
-        //     imagePath: "/facilities/atv.jpg"
-        // },
-        // {
-        //     title: "Dusun Buah",
-        //     description: "Nikmati pengalaman unik dengan pemandangan dusun buah-buahan yang menghijau di sekeliling homestay.",
-        //     imagePath: "/facilities/dusun.jpg"
-        // },
-        // {
-        //     title: "WiFi Percuma",
-        //     description: "Kekal berhubung dengan WiFi berkelajuan tinggi yang tersedia di seluruh homestay.",
-        //     imagePath: "/facilities/wifi.jpg"
-        // },
         {
             title: "Dapur Memasak",
             description: "Dapur memasak yang lengkap untuk memudahkan tetamu menyediakan hidangan sendiri.",

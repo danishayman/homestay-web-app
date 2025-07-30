@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { google } from 'googleapis';
 
-// Your Google Calendar ID (this is the email of the calendar)
+//Google Calendar ID
 const CALENDAR_ID = process.env.GOOGLE_CALENDAR_ID;
 
 // Initialize the Google Calendar API

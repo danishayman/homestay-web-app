@@ -119,7 +119,7 @@ export default function Location() {
                   </Link>
                   
                   <Link
-                    href="https://www.google.com/maps/dir//Tuah+Cemerlang+Homestay,+124,+Kampung+Teluk+Jamat,+06400+Pokok+Sena,+Kedah/@6.1304303,100.4553204,17z"
+                    href="https://maps.app.goo.gl/CiCvGFBjiF4YNd9z7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-4 py-2 font-montserrat text-sm font-semibold text-[#183B4E] bg-white border border-gray-300 rounded-lg shadow-md hover:bg-gray-50 transition-all duration-300"

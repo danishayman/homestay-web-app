@@ -91,8 +91,8 @@ export default function Location() {
                 <div>
                   <h4 className="font-montserrat font-semibold text-[#183B4E]">Email</h4>
                   <p className="mt-1">
-                    <Link href="mailto:info@tuahcemerlang@gmail.com" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
-                      tuahcemerlang@gmail.com
+                    <Link href="mailto:info@mohdnazet@gmail.com" className="text-[#27548A] hover:text-[#183B4E] transition-colors duration-300 font-montserrat">
+                      mohdnazet@gmail.com
                     </Link>
                   </p>
                 </div>

@@ -22,8 +22,8 @@ export default function Hero() {
                 <div className="flex flex-col justify-center w-full max-w-xl py-12 md:py-20 items-center sm:items-start text-center sm:text-left mx-auto sm:mx-0">
                     <div>
                         <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight text-shadow select-none cursor-default">
-                            <span className="block relative overflow-visible pb-2 hover:text-[#F5EEDC] transition-colors duration-300">Tuah Cemerlang</span>
-                            <span className="block text-[#DDA853] relative overflow-visible hover:text-white transition-colors duration-300">Homestay</span>
+                            <span className="block relative overflow-visible pb-2 hover:text-[#F5EEDC] transition-colors duration-300 sm:whitespace-nowrap">Tuah Cemerlang Homestay</span>
+                            <span className="block text-[#DDA853] relative overflow-visible hover:text-white transition-colors duration-300 sm:whitespace-nowrap">Pokok Sena Kedah</span>
                         </h1>
                     </div>
 

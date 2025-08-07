@@ -220,7 +220,7 @@ export default function Gallery() {
                     </div>
 
                     {/* Image Indicators/Dots */}
-                    <div className="mt-4 flex justify-center space-x-3 select-none">
+                    <div className="mt-4 flex justify-center space-x-4 px-4 py-2 select-none">
                         {galleryImages.map((_, index) => (
                             <button
                                 key={index}

@@ -23,13 +23,13 @@ export default function Hero() {
                     <div>
                         <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight text-shadow select-none cursor-default">
                             <span className="block relative overflow-visible pb-2 hover:text-[#F5EEDC] transition-colors duration-300 sm:whitespace-nowrap">Tuah Cemerlang Homestay</span>
-                            <span className="block text-[#DDA853] relative overflow-visible hover:text-white transition-colors duration-300 sm:whitespace-nowrap">Pokok Sena Kedah</span>
+                            <span className="block text-[#DDA853] relative overflow-visible hover:text-white transition-colors duration-300 sm:whitespace-nowrap">Kedah Darul Aman</span>
                         </h1>
                     </div>
 
                     <div className="flex flex-wrap mt-4 md:mt-6 text-[#F5EEDC] font-semibold tracking-wide font-montserrat select-none cursor-default">
                         <p className="flex items-center text-sm sm:text-base">
-                            <span className="mr-2 text-lg">•</span> 3 Bilik Tidur, 2 Bilik Mandi
+                            <span className="mr-2 text-lg">•</span> 3 Bilik Tidur, 2 Bilik Air
                         </p>
                     </div>
 

@@ -6,35 +6,35 @@ import Image from 'next/image';
 const galleryImages = [
     {
         src: '/gallery/image1.jpg',
-        alt: 'Ruang Tamu',
+        alt: 'Ruang tamu luas dan selesa di Tuah Cemerlang Homestay Kedah dengan kerusi empuk dan hiasan moden',
     },
     {
         src: '/gallery/image2.jpg',
-        alt: 'Dapur Memasak',
+        alt: 'Dapur lengkap dengan kemudahan memasak moden di homestay keluarga Pokok Sena Kedah',
     },
     {
         src: '/gallery/image3.jpg',
-        alt: 'Ruang Tamu',
+        alt: 'Ruang tamu homestay dengan pemandangan indah dan suasana kampung yang nyaman di Kedah',
     },
     {
         src: '/gallery/image4.jpg',
-        alt: 'Bilik Tidur Utama',
+        alt: 'Bilik tidur utama dengan katil queen size dan penghawa dingin di homestay kolam renang Kedah',
     },
     {
         src: '/gallery/image5.jpg',
-        alt: 'Kolam Renang',
+        alt: 'Kolam renang peribadi yang bersih dan selamat untuk keluarga di Tuah Cemerlang Homestay',
     },
         {
         src: '/gallery/image6.jpg',
-        alt: 'Ruang Makan',
+        alt: 'Ruang makan keluarga yang luas dengan meja besar di homestay Pokok Sena Kedah',
     },
         {
         src: '/gallery/image7.jpg',
-        alt: 'Bilik Tidur 2',
+        alt: 'Bilik tidur kedua dengan katil single dan kemudahan lengkap di homestay murah Kedah',
     },
         {
         src: '/gallery/image8.jpg',
-        alt: 'Bilik Tidur 3',
+        alt: 'Bilik tidur ketiga yang selesa dengan pemandangan sawah padi di homestay kampung Kedah',
     },
 ];
 

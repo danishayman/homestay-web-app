@@ -109,7 +109,7 @@ export default function Location() {
                     <div className="relative w-5 h-5 mr-2">
                       <Image
                         src="/waze-logo.png"
-                        alt="Waze Logo"
+                        alt="Logo Waze untuk navigasi ke Tuah Cemerlang Homestay Pokok Sena Kedah"
                         width={20}
                         height={20}
                         className="object-contain"
@@ -127,7 +127,7 @@ export default function Location() {
                     <div className="relative w-5 h-5 mr-2">
                       <Image
                         src="/google-maps-logo.svg"
-                        alt="Google Maps Logo"
+                        alt="Logo Google Maps untuk arah ke homestay keluarga Tuah Cemerlang Kedah"
                         width={20}
                         height={20}
                         className="object-contain"

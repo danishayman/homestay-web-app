@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/hero-image.webp"
-                    alt="Tuah Cemerlang Homestay"
+                    alt="Tuah Cemerlang Homestay Kedah - Homestay mewah dengan kolam renang dan pemandangan sawah padi di Pokok Sena"
                     fill
                     priority
                     className="object-cover object-center sm:object-center md:object-center"

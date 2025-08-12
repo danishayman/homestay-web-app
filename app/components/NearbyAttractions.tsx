@@ -7,9 +7,10 @@ type AttractionProps = {
     distance: string;
     imagePath: string;
     linkUrl?: string;
+    altText: string;
 };
 
-const Attraction = ({ title, description, distance, imagePath, linkUrl }: AttractionProps) => {
+const Attraction = ({ title, description, distance, imagePath, linkUrl, altText }: AttractionProps) => {
     return (
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
             <div className="relative h-48 w-full">
@@ -19,7 +20,7 @@ const Attraction = ({ title, description, distance, imagePath, linkUrl }: Attrac
                 {/*Image Placeholder*/}
                 {<Image
                     src={imagePath}
-                    alt={title}
+                    alt={altText}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"
                 />}
@@ -61,63 +62,72 @@ export default function NearbyAttractions() {
             description: "Menghormati warisan padi Malaysia dengan pameran interaktif mengenai penanaman dan pemprosesan padi.",
             distance: "15 min",
             imagePath: "/attractions/muzium-padi.jpg",
-            linkUrl: "https://maps.app.goo.gl/UGVGLcRbS2Ke24A27"
+            linkUrl: "https://maps.app.goo.gl/UGVGLcRbS2Ke24A27",
+            altText: "Muzium Padi Alor Setar - tempat menarik berhampiran homestay Kedah dengan pameran warisan padi Malaysia"
         },
         {
             title: "Menara Alor Setar",
             description: "Menara telekomunikasi dan pelancongan setinggi 165.5 meter dengan pemandangan panoramik bandar Alor Setar.",
             distance: "25 min",
             imagePath: "/attractions/menara-alor-setar.jpg",
-            linkUrl: "https://maps.app.goo.gl/2nn1HfkReHJ1XbyF9"
+            linkUrl: "https://maps.app.goo.gl/2nn1HfkReHJ1XbyF9",
+            altText: "Menara Alor Setar 165.5 meter - landmark terkenal dekat homestay Pokok Sena dengan pemandangan panoramik"
         },
         {
             title: "Masjid Zahir",
             description: "Salah satu masjid tertua dan terindah di Malaysia dengan seni bina Islam yang menakjubkan.",
             distance: "25 min",
             imagePath: "/attractions/masjid-zahir.jpg",
-            linkUrl: "https://maps.app.goo.gl/ePegdcqnQ2xLJ8i47"
+            linkUrl: "https://maps.app.goo.gl/ePegdcqnQ2xLJ8i47",
+            altText: "Masjid Zahir Alor Setar - masjid bersejarah dengan seni bina Islam indah berhampiran homestay Kedah"
         },
         {
             title: "Bukit Mak Cun",
             description: "Tempat menarik untuk hiking dan menikmati pemandangan indah dari puncak bukit.",
             distance: "50 min",
             imagePath: "/attractions/bukit-kokdiang.jpg",
-            linkUrl: "https://maps.app.goo.gl/8WjugKsa97W741wZA"
+            linkUrl: "https://maps.app.goo.gl/8WjugKsa97W741wZA",
+            altText: "Bukit Mak Cun Kedah - destinasi hiking dengan pemandangan indah dekat homestay Tuah Cemerlang"
         },
         {
             title: "Dataran Balai Besar",
             description: "Kawasan bersejarah dan pusat aktiviti budaya di jantung bandar Alor Setar.",
             distance: "25 min",
             imagePath: "/attractions/dataran-balai-besar.jpg",
-            linkUrl: "https://maps.app.goo.gl/ChCUyENGBrDyH9To6"
+            linkUrl: "https://maps.app.goo.gl/ChCUyENGBrDyH9To6",
+            altText: "Dataran Balai Besar Alor Setar - kawasan bersejarah dan budaya dekat homestay Pokok Sena Kedah"
         },
         {
             title: "Pekan Rabu",
             description: "Pasar tradisional ikonik dengan pelbagai barangan tempatan, kraftangan dan makanan tradisional.",
             distance: "25 min",
             imagePath: "/attractions/pekan-rabu.jpg",
-            linkUrl: "https://maps.app.goo.gl/PsTwarEm127RkoK36"
+            linkUrl: "https://maps.app.goo.gl/PsTwarEm127RkoK36",
+            altText: "Pekan Rabu Alor Setar - pasar tradisional dengan barangan tempatan dekat homestay keluarga Kedah"
         },
         {
             title: "Hospital Sultanah Bahiyah",
             description: "Hospital utama di Kedah dengan pelbagai kemudahan perubatan dan pakar.",
             distance: "5 min",
             imagePath: "/attractions/hospital-sultanah-bahiyah.jpg",
-            linkUrl: "https://maps.app.goo.gl/PMANWERJTUxZqBzB9"
+            linkUrl: "https://maps.app.goo.gl/PMANWERJTUxZqBzB9",
+            altText: "Hospital Sultanah Bahiyah - hospital utama Kedah yang sangat dekat dengan homestay Tuah Cemerlang"
         },
         {
             title: "Lapangan Terbang Sultan Abdul Halim",
             description: "Lapangan terbang utama di Kedah yang menghubungkan negeri ini dengan destinasi lain.",
             distance: "20 min",
             imagePath: "/attractions/lapangan-terbang.jpg",
-            linkUrl: "https://maps.app.goo.gl/2tviEyF1njjzG73P9"
+            linkUrl: "https://maps.app.goo.gl/2tviEyF1njjzG73P9",
+            altText: "Lapangan Terbang Sultan Abdul Halim - airport Kedah dengan akses mudah dari homestay Pokok Sena"
         },
         {
             title: "Aman Central Mall",
             description: "Pusat membeli-belah moden dengan pelbagai kedai, restoran dan hiburan.",
             distance: "20 min",
             imagePath: "/attractions/aman-central-mall.jpg",
-            linkUrl: "https://maps.app.goo.gl/U9eDFwuWr8qg6ioW9"
+            linkUrl: "https://maps.app.goo.gl/U9eDFwuWr8qg6ioW9",
+            altText: "Aman Central Mall Alor Setar - pusat shopping moden dengan akses mudah dari homestay Kedah"
         }
     
         
@@ -142,6 +152,7 @@ export default function NearbyAttractions() {
                             distance={attraction.distance}
                             imagePath={attraction.imagePath}
                             linkUrl={attraction.linkUrl}
+                            altText={attraction.altText}
                         />
                     ))}
                 </div>

@@ -4,9 +4,10 @@ type FacilityProps = {
     title: string;
     description: string;
     imagePath: string;
+    altText: string;
 };
 
-const Facility = ({ title, description, imagePath }: FacilityProps) => {
+const Facility = ({ title, description, imagePath, altText }: FacilityProps) => {
     return (
         <div className="flex flex-col items-center p-4 bg-white/90 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
             <div className="relative w-full h-70 mb-4 overflow-hidden rounded-lg">
@@ -16,7 +17,7 @@ const Facility = ({ title, description, imagePath }: FacilityProps) => {
                 {/* Image component with hover effect */}
                 {<Image
                     src={imagePath}
-                    alt={title}
+                    alt={altText}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"
                 />}
@@ -32,27 +33,32 @@ export default function Facilities() {
         {
             title: "Kolam Renang",
             description: "Nikmati masa santai berenang di kolam renang untuk dewasa dan kanak-kanak.",
-            imagePath: "/facilities/kolam.jpg"
+            imagePath: "/facilities/kolam.jpg",
+            altText: "Kolam renang peribadi yang bersih dengan air jernih di homestay keluarga Tuah Cemerlang Kedah"
         },
         {
             title: "Dapur Memasak",
             description: "Dapur memasak yang lengkap untuk memudahkan tetamu menyediakan hidangan sendiri.",
-            imagePath: "/facilities/dapur.jpg"
+            imagePath: "/facilities/dapur.jpg",
+            altText: "Dapur lengkap dengan peralatan memasak moden dan kabinet besar di homestay Pokok Sena"
         },
         {
             title: "Kawasan Sawah Padi",
             description: "Nikmati pengalaman unik dengan pemandangan sawah padi yang menghijau di sekeliling homestay.",
-            imagePath: "/facilities/padi.jpg"
+            imagePath: "/facilities/padi.jpg",
+            altText: "Pemandangan sawah padi hijau yang menawan di sekeliling homestay kampung Kedah"
         },
         {
             title: "Ruang Santai",
             description: "Ruang istirehat yang selesa untuk menikmati suasana kampung dan pemandangan kolam.",
-            imagePath: "/facilities/santai.jpg"
+            imagePath: "/facilities/santai.jpg",
+            altText: "Ruang santai outdoor yang nyaman dengan pemandangan kolam di homestay mewah Kedah"
         },
         {
             title: "Kemudahan BBQ",
             description: "Ruang khas untuk aktiviti BBQ dengan kemudahan yang lengkap.",
-            imagePath: "/facilities/bbq.jpg"
+            imagePath: "/facilities/bbq.jpg",
+            altText: "Area BBQ lengkap dengan grill dan meja untuk keluarga di homestay Tuah Cemerlang"
         },
 
     ];
@@ -74,6 +80,7 @@ export default function Facilities() {
                             title={facility.title}
                             description={facility.description}
                             imagePath={facility.imagePath}
+                            altText={facility.altText}
                         />
                     ))}
                 </div>

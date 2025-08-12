@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Block access to admin or sensitive areas (if any)
+Disallow: /api/
+
+# Allow all images
+Allow: /public/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.gif$
+
+# Sitemap location
+Sitemap: https://tuahcemerlang.vercel.app/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1

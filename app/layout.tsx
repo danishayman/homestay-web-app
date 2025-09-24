@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Tuah Suci Homestay" }],
   creator: "Tuah Suci Homestay",
   publisher: "Tuah Suci Homestay",
-  metadataBase: new URL("https://tuahcemerlang.vercel.app"),
+  metadataBase: new URL("https://tuahsuci.vercel.app"),
   alternates: {
-    canonical: "https://tuahcemerlang.vercel.app"
+    canonical: "https://tuahsuci.vercel.app"
   },
   openGraph: {
     type: "website",
     locale: "ms_MY",
-    url: "https://tuahcemerlang.vercel.app",
+    url: "https://tuahsuci.vercel.app",
     title: "Tuah Suci Homestay Kedah - Homestay Terbaik di Pokok Sena",
     description: "Homestay mewah dengan 3 bilik tidur, kolam renang dan pemandangan indah di Kedah. Lokasi strategik di Pokok Sena dengan kemudahan moden.",
     siteName: "Tuah Suci Homestay",
@@ -66,7 +66,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Homestay" />
         <meta name="theme-color" content="#27548A" />
         <meta name="msapplication-TileColor" content="#27548A" />
-        <link rel="canonical" href="https://tuahcemerlang.vercel.app" />
+        <link rel="canonical" href="https://tuahsuci.vercel.app" />
         <StructuredData type="homepage" />
       </head>
       <body className="antialiased">

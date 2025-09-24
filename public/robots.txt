@@ -13,7 +13,7 @@ Allow: /*.webp$
 Allow: /*.gif$
 
 # Sitemap location
-Sitemap: https://tuahcemerlang.vercel.app/sitemap.xml
+Sitemap: https://tuahsuci.vercel.app/sitemap.xml
 
 # Crawl delay (optional - helps with server load)
 Crawl-delay: 1

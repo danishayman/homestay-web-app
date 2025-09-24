@@ -9,7 +9,7 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
     "@type": ["LodgingBusiness", "TouristAccommodation"],
     "name": "Tuah Suci Homestay",
     "description": "Homestay mewah di Kedah dengan 3 bilik tidur, kolam renang, dan pemandangan indah. Lokasi strategik di Pokok Sena dengan kemudahan moden.",
-    "url": "https://tuahcemerlang.vercel.app",
+    "url": "https://tuahsuci.vercel.app",
     "telephone": "+60175240056",
     "email": "mohdnazet1@gmail.com",
     "priceRange": "$$",
@@ -67,15 +67,15 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
     "checkinTime": "15:00",
     "checkoutTime": "12:00",
     "image": [
-      "https://tuahcemerlang.vercel.app/hero-image.webp",
-      "https://tuahcemerlang.vercel.app/gallery/image1.jpg",
-      "https://tuahcemerlang.vercel.app/gallery/image2.jpg",
-      "https://tuahcemerlang.vercel.app/facilities/kolam.jpg"
+      "https://tuahsuci.vercel.app/hero-image.webp",
+      "https://tuahsuci.vercel.app/gallery/image1.jpg",
+      "https://tuahsuci.vercel.app/gallery/image2.jpg",
+      "https://tuahsuci.vercel.app/facilities/kolam.jpg"
     ],
     "sameAs": [
       "https://www.facebook.com/share/1Jd9jnZjX6/",
-      "https://www.instagram.com/tuahcemerlanghomestay",
-      "https://www.tiktok.com/@tuahcemerlanghomestay"
+      "https://www.instagram.com/tuahsucihomestay",
+      "https://www.tiktok.com/@tuahsucihomestay"
     ],
     "areaServed": {
       "@type": "GeoCircle",
@@ -97,8 +97,8 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Tuah Suci Homestay",
-    "url": "https://tuahcemerlang.vercel.app",
-    "logo": "https://tuahcemerlang.vercel.app/icon1.png",
+    "url": "https://tuahsuci.vercel.app",
+    "logo": "https://tuahsuci.vercel.app/icon1.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+60175240056",
@@ -107,8 +107,8 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
     },
     "sameAs": [
       "https://www.facebook.com/share/1Jd9jnZjX6/",
-      "https://www.instagram.com/tuahcemerlanghomestay",
-      "https://www.tiktok.com/@tuahcemerlanghomestay"
+      "https://www.instagram.com/tuahsucihomestay",
+      "https://www.tiktok.com/@tuahsucihomestay"
     ]
   };
 
@@ -117,7 +117,7 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Tuah Suci Homestay",
-    "url": "https://tuahcemerlang.vercel.app",
+    "url": "https://tuahsuci.vercel.app",
     "description": "Homestay mewah di Kedah dengan kolam renang dan pemandangan indah",
     "publisher": {
       "@type": "Organization",
@@ -127,7 +127,7 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://tuahcemerlang.vercel.app/?q={search_term_string}"
+        "urlTemplate": "https://tuahsuci.vercel.app/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -142,13 +142,13 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://tuahcemerlang.vercel.app"
+        "item": "https://tuahsuci.vercel.app"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Homestay Kedah",
-        "item": "https://tuahcemerlang.vercel.app/#facilities"
+        "item": "https://tuahsuci.vercel.app/#facilities"
       }
     ]
   };

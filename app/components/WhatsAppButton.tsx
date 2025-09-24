@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
 
   return (
     <Link
-      href="https://wa.me/60175240056?text=Tuah%20Cemerlang%20Homestay%20-%20Saya%20berminat%20untuk%20tempah%20homestay."
+      href="https://wa.me/60175240056?text=Tuah%20Suci%20Homestay%20-%20Saya%20berminat%20untuk%20tempah%20homestay."
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed bottom-6 left-6 z-50 bg-[#25D366] text-white rounded-full p-3 shadow-lg transform transition-all duration-300 hover:scale-110 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"

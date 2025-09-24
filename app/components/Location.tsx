@@ -22,7 +22,7 @@ export default function Location() {
             {/* Google Maps Embed */}
             {
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.5744451331752!2d100.45532039999999!3d6.1304302999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b4f7face7aba3%3A0x16f23158a1f12a85!2sTuah%20Cemerlang%20Homestay!5e1!3m2!1sen!2smy!4v1753414204387!5m2!1sen!2smy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.5744451331752!2d100.45532039999999!3d6.1304302999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b4f7face7aba3%3A0x16f23158a1f12a85!2sTuah%20Suci%20Homestay!5e1!3m2!1sen!2smy!4v1753414204387!5m2!1sen!2smy"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

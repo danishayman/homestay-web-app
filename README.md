@@ -4,7 +4,7 @@
 
 This is a modern, responsive website for Tuah Suci Homestay, a beautiful homestay in Kedah, Malaysia. The website is designed to showcase the homestay's amenities, nearby attractions, and provide easy booking options for potential guests.
 
-**🔗 Live Website: [https://tuahcemerlang.vercel.app/](https://tuahcemerlang.vercel.app/)**
+**🔗 Live Website: [https://tuahsuci.vercel.app/](https://tuahsuci.vercel.app/)**
 
 ## 🚀 Features
 

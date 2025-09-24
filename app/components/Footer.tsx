@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto">
                 {/* Mobile Footer Logo - Visible only on small screens */}
                 <div className="text-center mb-8 sm:hidden">
-                    <h3 className="font-playfair text-3xl font-bold text-[#DDA853] mb-2">Tuah Cemerlang</h3>
+                    <h3 className="font-playfair text-3xl font-bold text-[#DDA853] mb-2">Tuah Suci</h3>
                     <h4 className="font-montserrat text-xl text-white/90">Homestay</h4>
                 </div>
 
@@ -16,7 +16,7 @@ export default function Footer() {
                     {/* Column 1: Logo and About */}
                     <div className="hidden sm:block">
                         <div className="mb-4">
-                            <h3 className="font-playfair text-2xl font-bold text-[#DDA853] mb-2">Tuah Cemerlang</h3>
+                            <h3 className="font-playfair text-2xl font-bold text-[#DDA853] mb-2">Tuah Suci</h3>
                             <h4 className="font-montserrat text-lg text-white/90">Homestay</h4>
                         </div>
                         <p className="text-white/80 text-sm mb-4 font-montserrat">

@@ -127,7 +127,7 @@ export default function Location() {
                     <div className="relative w-5 h-5 mr-2">
                       <Image
                         src="/google-maps-logo.svg"
-                        alt="Logo Google Maps untuk arah ke homestay keluarga Tuah Cemerlang Kedah"
+                        alt="Logo Google Maps untuk arah ke homestay keluarga Tuah Suci Kedah"
                         width={20}
                         height={20}
                         className="object-contain"

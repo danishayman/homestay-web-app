@@ -34,7 +34,7 @@ export default function Facilities() {
             title: "Kolam Renang",
             description: "Nikmati masa santai berenang di kolam renang untuk dewasa dan kanak-kanak.",
             imagePath: "/facilities/kolam.jpg",
-            altText: "Kolam renang peribadi yang bersih dengan air jernih di homestay keluarga Tuah Cemerlang Kedah"
+            altText: "Kolam renang peribadi yang bersih dengan air jernih di homestay keluarga Tuah Suci Kedah"
         },
         {
             title: "Dapur Memasak",
@@ -58,7 +58,7 @@ export default function Facilities() {
             title: "Kemudahan BBQ",
             description: "Ruang khas untuk aktiviti BBQ dengan kemudahan yang lengkap.",
             imagePath: "/facilities/bbq.jpg",
-            altText: "Area BBQ lengkap dengan grill dan meja untuk keluarga di homestay Tuah Cemerlang"
+            altText: "Area BBQ lengkap dengan grill dan meja untuk keluarga di homestay Tuah Suci"
         },
 
     ];

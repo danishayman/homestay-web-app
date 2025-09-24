@@ -87,7 +87,7 @@ export default function NearbyAttractions() {
             distance: "50 min",
             imagePath: "/attractions/bukit-kokdiang.jpg",
             linkUrl: "https://maps.app.goo.gl/8WjugKsa97W741wZA",
-            altText: "Bukit Mak Cun Kedah - destinasi hiking dengan pemandangan indah dekat homestay Tuah Cemerlang"
+            altText: "Bukit Mak Cun Kedah - destinasi hiking dengan pemandangan indah dekat homestay Tuah Suci"
         },
         {
             title: "Dataran Balai Besar",
@@ -111,7 +111,7 @@ export default function NearbyAttractions() {
             distance: "5 min",
             imagePath: "/attractions/hospital-sultanah-bahiyah.jpg",
             linkUrl: "https://maps.app.goo.gl/PMANWERJTUxZqBzB9",
-            altText: "Hospital Sultanah Bahiyah - hospital utama Kedah yang sangat dekat dengan homestay Tuah Cemerlang"
+            altText: "Hospital Sultanah Bahiyah - hospital utama Kedah yang sangat dekat dengan homestay Tuah Suci"
         },
         {
             title: "Lapangan Terbang Sultan Abdul Halim",

@@ -7,7 +7,7 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LodgingBusiness", "TouristAccommodation"],
-    "name": "Tuah Cemerlang Homestay",
+    "name": "Tuah Suci Homestay",
     "description": "Homestay mewah di Kedah dengan 3 bilik tidur, kolam renang, dan pemandangan indah. Lokasi strategik di Pokok Sena dengan kemudahan moden.",
     "url": "https://tuahcemerlang.vercel.app",
     "telephone": "+60175240056",
@@ -96,7 +96,7 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Tuah Cemerlang Homestay",
+    "name": "Tuah Suci Homestay",
     "url": "https://tuahcemerlang.vercel.app",
     "logo": "https://tuahcemerlang.vercel.app/icon1.png",
     "contactPoint": {
@@ -116,12 +116,12 @@ export default function StructuredData({ type = 'homepage' }: StructuredDataProp
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Tuah Cemerlang Homestay",
+    "name": "Tuah Suci Homestay",
     "url": "https://tuahcemerlang.vercel.app",
     "description": "Homestay mewah di Kedah dengan kolam renang dan pemandangan indah",
     "publisher": {
       "@type": "Organization",
-      "name": "Tuah Cemerlang Homestay"
+      "name": "Tuah Suci Homestay"
     },
     "potentialAction": {
       "@type": "SearchAction",

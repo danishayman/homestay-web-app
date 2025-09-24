@@ -70,7 +70,7 @@ export default function Footer() {
                                     </svg>
                                 </div>
                                 <address className="text-white/80 text-sm not-italic font-montserrat">
-                                    Tuah Cemerlang Homestay<br />
+                                    Tuah Suci Homestay<br />
                                     No 124<br />
                                     Kampung Teluk Jamat<br />
                                     06400 Pokok Sena<br />
@@ -133,7 +133,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="mt-8 sm:mt-10 pt-6 border-t border-white/10 text-center">
                     <p className="text-white/60 text-xs font-montserrat">
-                        © {currentYear} Tuah Cemerlang Homestay. Hak Cipta Terpelihara.
+                        © {currentYear} Tuah Suci Homestay. Hak Cipta Terpelihara.
                     </p>
                     <p className="text-white/40 text-xs font-montserrat mt-2">
                         Created by{' '}

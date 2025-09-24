@@ -6,7 +6,7 @@ import Image from 'next/image';
 const galleryImages = [
     {
         src: '/gallery/image1.jpg',
-        alt: 'Ruang tamu luas dan selesa di Tuah Cemerlang Homestay Kedah dengan kerusi empuk dan hiasan moden',
+        alt: 'Ruang tamu luas dan selesa di Tuah Suci Homestay Kedah dengan kerusi empuk dan hiasan moden',
     },
     {
         src: '/gallery/image2.jpg',
@@ -22,7 +22,7 @@ const galleryImages = [
     },
     {
         src: '/gallery/image5.jpg',
-        alt: 'Kolam renang peribadi yang bersih dan selamat untuk keluarga di Tuah Cemerlang Homestay',
+        alt: 'Kolam renang peribadi yang bersih dan selamat untuk keluarga di Tuah Suci Homestay',
     },
         {
         src: '/gallery/image6.jpg',

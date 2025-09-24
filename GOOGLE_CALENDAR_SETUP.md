@@ -1,6 +1,6 @@
 # 📅 Google Calendar Integration Setup Guide
 
-This guide will help you set up the Google Calendar integration for your Tuah Cemerlang Homestay website's availability calendar.
+This guide will help you set up the Google Calendar integration for your Tuah Suci Homestay website's availability calendar.
 
 ## 🔑 Step 1: Create a Google Cloud Project
 

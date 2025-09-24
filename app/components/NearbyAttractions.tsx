@@ -139,7 +139,7 @@ export default function NearbyAttractions() {
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-6xl font-playfair font-bold text-[#183B4E] mb-4">Kawasan Sekitar</h2>
                     <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
-                        Jelajahi tempat menarik berhampiran Pokok Sena dan Alor Setar yang boleh dilawati semasa menginap di Tuah Cemerlang Homestay.
+                        Jelajahi tempat menarik berhampiran Pokok Sena dan Alor Setar yang boleh dilawati semasa menginap di Tuah Suci Homestay.
                     </p>
                 </div>
 

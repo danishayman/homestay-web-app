@@ -29,7 +29,7 @@ export default function Location() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Tuah Cemerlang Homestay Location"
+                title="Tuah Suci Homestay Location"
                 className="absolute inset-0"
               ></iframe>
             }
@@ -51,7 +51,7 @@ export default function Location() {
                 <div>
                   <h4 className="font-montserrat font-semibold text-[#183B4E]">Alamat</h4>
                   <p className="mt-1 text-[#183B4E]/80 font-montserrat">
-                    Tuah Cemerlang Homestay<br />
+                    Tuah Suci Homestay<br />
                     No 124<br />
                     Kampung Teluk Jamat<br />
                     06400 Pokok Sena<br />
@@ -109,7 +109,7 @@ export default function Location() {
                     <div className="relative w-5 h-5 mr-2">
                       <Image
                         src="/waze-logo.png"
-                        alt="Logo Waze untuk navigasi ke Tuah Cemerlang Homestay Pokok Sena Kedah"
+                        alt="Logo Waze untuk navigasi ke Tuah Suci Homestay Pokok Sena Kedah"
                         width={20}
                         height={20}
                         className="object-contain"

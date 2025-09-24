@@ -3,16 +3,16 @@ import "./globals.css";
 import StructuredData from "./components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Tuah Cemerlang Homestay Kedah - Homestay Terbaik di Pokok Sena",
+  title: "Tuah Suci Homestay Kedah - Homestay Terbaik di Pokok Sena",
   description: "Homestay mewah di Kedah dengan 3 bilik tidur, kolam renang, dan pemandangan indah. Lokasi strategik di Pokok Sena, berhampiran tarikan popular. Tempah sekarang!",
   keywords: [
     "homestay kedah", "homestay pokok sena", "penginapan kedah", 
-    "homestay kolam renang", "homestay keluarga kedah", "tuah cemerlang homestay",
+    "homestay kolam renang", "homestay keluarga kedah", "Tuah Suci Homestay",
     "homestay alor setar", "penginapan murah kedah", "homestay swimming pool kedah"
   ],
-  authors: [{ name: "Tuah Cemerlang Homestay" }],
-  creator: "Tuah Cemerlang Homestay",
-  publisher: "Tuah Cemerlang Homestay",
+  authors: [{ name: "Tuah Suci Homestay" }],
+  creator: "Tuah Suci Homestay",
+  publisher: "Tuah Suci Homestay",
   metadataBase: new URL("https://tuahcemerlang.vercel.app"),
   alternates: {
     canonical: "https://tuahcemerlang.vercel.app"
@@ -21,21 +21,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ms_MY",
     url: "https://tuahcemerlang.vercel.app",
-    title: "Tuah Cemerlang Homestay Kedah - Homestay Terbaik di Pokok Sena",
+    title: "Tuah Suci Homestay Kedah - Homestay Terbaik di Pokok Sena",
     description: "Homestay mewah dengan 3 bilik tidur, kolam renang dan pemandangan indah di Kedah. Lokasi strategik di Pokok Sena dengan kemudahan moden.",
-    siteName: "Tuah Cemerlang Homestay",
+    siteName: "Tuah Suci Homestay",
     images: [
       {
         url: "/hero-image.webp",
         width: 1200,
         height: 630,
-        alt: "Tuah Cemerlang Homestay - Homestay mewah dengan kolam renang di Kedah"
+        alt: "Tuah Suci Homestay - Homestay mewah dengan kolam renang di Kedah"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tuah Cemerlang Homestay Kedah - Homestay Terbaik di Pokok Sena",
+    title: "Tuah Suci Homestay Kedah - Homestay Terbaik di Pokok Sena",
     description: "Homestay mewah dengan 3 bilik tidur, kolam renang dan pemandangan indah di Kedah",
     images: ["/hero-image.webp"]
   },

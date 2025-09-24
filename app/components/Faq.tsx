@@ -45,7 +45,7 @@ export default function Faq() {
         },
         {
             question: "Berapa jumlah bilik dan katil yang tersedia?",
-            answer: "Tuah Cemerlang Homestay menawarkan 3 bilik tidur dengan kapasiti maksimum 12 orang. Terdapat 2 bilik mandi untuk keselesaan tetamu."
+            answer: "Tuah Suci Homestay menawarkan 3 bilik tidur dengan kapasiti maksimum 12 orang. Terdapat 2 bilik mandi untuk keselesaan tetamu."
         },
         {
             question: "Adakah tempat ini sesuai untuk keluarga dengan anak-anak?",
@@ -85,7 +85,7 @@ export default function Faq() {
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-6xl font-playfair font-bold text-[#183B4E] mb-4">Soalan Lazim</h2>
                     <p className="text-[#183B4E] font-montserrat max-w-2xl mx-auto font-bold">
-                        Jawapan kepada pertanyaan yang sering ditanya mengenai Tuah Cemerlang Homestay.
+                        Jawapan kepada pertanyaan yang sering ditanya mengenai Tuah Suci Homestay.
                     </p>
                 </div>
 

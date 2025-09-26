@@ -38,7 +38,7 @@ export default function Facilities() {
         },
         {
             title: "Dapur Memasak",
-            description: "Dapur memasak yang lengkap untuk memudahkan tetamu menyediakan hidangan sendiri.",
+            description: "Dapur memasak yang lengkap beserta peti ais untuk memudahkan tetamu.",
             imagePath: "/facilities/dapur.jpg",
             altText: "Dapur lengkap dengan peralatan memasak moden dan kabinet besar di homestay Pokok Sena"
         },

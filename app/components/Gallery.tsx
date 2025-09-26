@@ -6,35 +6,35 @@ import Image from 'next/image';
 const galleryImages = [
     {
         src: '/gallery/image1.jpg',
-        alt: 'Ruang tamu luas dan selesa di Tuah Suci Homestay Kedah dengan kerusi empuk dan hiasan moden',
+        alt: 'Ruang tamu luas dan selesa',
     },
     {
         src: '/gallery/image2.jpg',
-        alt: 'Dapur lengkap dengan kemudahan memasak moden di homestay keluarga Pokok Sena Kedah',
+        alt: 'Dapur lengkap dengan kemudahan',
     },
     {
         src: '/gallery/image3.jpg',
-        alt: 'Ruang tamu homestay dengan pemandangan indah dan suasana kampung yang nyaman di Kedah',
+        alt: 'Ruang tamu homestay dengan TV',
     },
     {
         src: '/gallery/image4.jpg',
-        alt: 'Bilik tidur utama dengan katil queen size dan penghawa dingin di homestay kolam renang Kedah',
+        alt: 'Bilik tidur utama dengan katil queen & penghawa dingin ',
     },
     {
         src: '/gallery/image5.jpg',
-        alt: 'Kolam renang peribadi yang bersih dan selamat untuk keluarga di Tuah Suci Homestay',
+        alt: 'Kolam renang private pool yang tenang',
     },
         {
         src: '/gallery/image6.jpg',
-        alt: 'Ruang makan keluarga yang luas dengan meja besar di homestay Pokok Sena Kedah',
+        alt: 'Ruang makan keluarga yang luas',
     },
         {
         src: '/gallery/image7.jpg',
-        alt: 'Bilik tidur kedua dengan katil single dan kemudahan lengkap di homestay murah Kedah',
+        alt: 'Bilik tidur kedua dengan katil queen & penghawa dingin',
     },
         {
         src: '/gallery/image8.jpg',
-        alt: 'Bilik tidur ketiga yang selesa dengan pemandangan sawah padi di homestay kampung Kedah',
+        alt: 'Bilik tidur ketiga dengan tilam single & penghawa dingin',
     },
 ];
 

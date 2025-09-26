@@ -19,6 +19,7 @@ const Facility = ({ title, description, imagePath, altText }: FacilityProps) => 
                     src={imagePath}
                     alt={altText}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 hover:scale-110"
                 />}
             </div>

@@ -172,6 +172,7 @@ export default function Gallery() {
                                                 src={image.src}
                                                 alt={image.alt}
                                                 fill
+                                                sizes="(max-width: 640px) 350px, 500px"
                                                 className={`object-cover transition-all duration-300 ${!isActive ? 'blur-[1px]' : ''} ${isDragging ? 'cursor-grabbing' : 'cursor-grab'} select-none`}
                                                 priority={isActive}
                                                 style={{

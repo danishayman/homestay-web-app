@@ -69,7 +69,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://tuahsuci.vercel.app" />
         <StructuredData type="homepage" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

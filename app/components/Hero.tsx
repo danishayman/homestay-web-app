@@ -7,12 +7,21 @@ export default function Hero() {
         <section className="relative h-screen overflow-hidden">
             {/* Hero Background Image */}
             <div className="absolute inset-0 z-0">
+                {/* Mobile Background Image */}
                 <Image
-                    src="/hero-image.webp"
+                    src="/hero-img-mobile.jpg"
                     alt="Tuah Suci Homestay Kedah - Homestay mewah dengan kolam renang dan pemandangan sawah padi di Pokok Sena"
                     fill
                     priority
-                    className="object-cover object-center sm:object-center md:object-center"
+                    className="object-cover object-center sm:hidden"
+                />
+                {/* Desktop Background Image */}
+                <Image
+                    src="/hero-image.jpg"
+                    alt="Tuah Suci Homestay Kedah - Homestay mewah dengan kolam renang dan pemandangan sawah padi di Pokok Sena"
+                    fill
+                    priority
+                    className="object-cover object-center hidden sm:block"
                 />
                 <div className="absolute inset-0 bg-black/45 sm:bg-black/35" /> {/* Better overlay balance for mobile */}
             </div>

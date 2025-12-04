@@ -53,11 +53,13 @@ export default function AvailabilityCalendar() {
         }
         
         const data = await response.json();
-        const processedEvents = data.events.map((event: GoogleCalendarEvent) => ({
-          start: new Date(event.start.dateTime || event.start.date || ''),
-          end: new Date(event.end.dateTime || event.end.date || ''),
-          summary: event.summary
-        }));
+        const processedEvents = data.events
+          .filter((event: GoogleCalendarEvent) => event.summary) // Filter out events without summary
+          .map((event: GoogleCalendarEvent) => ({
+            start: new Date(event.start.dateTime || event.start.date || ''),
+            end: new Date(event.end.dateTime || event.end.date || ''),
+            summary: event.summary
+          }));
         
         // Debug: Log events to console to help troubleshoot
         console.log('Calendar events:', processedEvents);
@@ -93,6 +95,9 @@ export default function AvailabilityCalendar() {
   // Check if a date is booked
   const isDateBooked = (date: Date) => {
     return events.some(event => {
+      // Skip events without a summary
+      if (!event.summary) return false;
+      
       const isRelevantEvent = event.summary.toUpperCase().includes('BOOKED') || 
                               event.summary.toUpperCase().includes('TEMPAHAN');
       
